@@ -1,4 +1,3 @@
-<!--#set var="sidebar" value="
 <ul>
 <li><a href=\"/~alex/\" title=\"Home\">Home</a></li>
 <li><a href=\"/~alex/students.shtml\" title=\"Students of Alex Potanin\">Students</a></li>
@@ -8,6 +7,3 @@
 <li><a href=\"/~alex/powerlaws/index.shtml\" title=\"Power Laws in Object Graphs\">Power Laws</a></li>
 <li><a href=\"/~alex/software/index.shtml\" title=\"Various Software that I have Created\">Software</a></li>
 </ul>
-" -->
-
-<!--#include virtual="/head.shtml"-->

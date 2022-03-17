@@ -1,6 +1,10 @@
-<!--#set var="h1" value="Associate Professor Alex Potanin" -->
-<!--#include virtual="/~alex/head.shtml" -->
+<html>
+  <head>
+    <title>Alex Potanin</title>
+  </head>
+  <body>
 
+    <!--#include virtual="/~alex/head.shtml" -->
 
 <p><a href="./images/AlexPotaninVicBooks.jpg"><img width="400"
 height="266" src="./images/AlexPotaninVicBooks_Small.jpg" alt="Alex
@@ -720,4 +724,5 @@ current and past conference committee memberships.
 </ol>
 
 
-<!--#include virtual="/tail.shtml" -->
+</body>
+</html>
