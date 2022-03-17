@@ -1,0 +1,180 @@
+<!--#set var="h1" value="Students of Alex Potanin" -->
+<!--#include virtual="/~alex/head.shtml" -->
+
+<ol>
+  <li>Nik Bielski (PhD Thesis at University of Canterbury in 2022 -
+    2027 (part time)), Co-Supervised
+    with <a href="https://www.canterbury.ac.nz/engineering/contact-us/people/thomas-li.html">Heyang
+      (Thomas) Li</a> at UC</li>
+  <li>David Young (PhD Thesis at KU in 2021 - 2024), Program Synthesis
+    to Untangle Modules, Co-Supervised
+    with <a href="https://ilyasergey.net/">Ilya Sergey</a> at NUS</li>
+  <li>Leon Bowie (RA in the second half of 2021), AgriDataTrade
+    Marketplace with N Leaching Sensor Network for NZ Farms</li>
+  <li>Sophia Roshal (Summer and Fall RA in 2021 (based at CMU and
+    Cornell)), Decidable Nominal Subtyping in Wyvern, Co-Supervised
+    with Jonathan Aldrich</li>
+  <li>Tobias Runge (PhD Thesis in 2019 - 2022 (based at TU
+    Braunschweig), CbC with Ownership and Traits, Co-Supervised with Ina
+    Schaefer and Marco Servetto</li>
+  <li>Manish Singh (PhD Thesis in 2017 - 2021 (part time, suspended in
+    2021)), Lock Free Balanced BST's, Co-Supervised
+    with <a href="https://ecs.wgtn.ac.nz/Main/LindsayGroves">Lindsay
+      Groves</a></li>
+  <li>Rowan Rathod (ENGR489 in 2021), Automated Farm Sensing on a
+    Robonomics Platform</li>
+  <li>Samantha Hau (ENGR489 in 2021), WFA Events App</li>
+  <li>Dominic Tjiptono (ENGR489 in 2021), Haskell in the Real World,
+    Co-Supervised
+    with <a href="https://people.wgtn.ac.nz/james.noble">James
+      Noble</a></li>
+  <li>Maxwell Clarke (2020/2021 Summer RA based at VUW), Wyvern
+    Effects and FFI</li>
+  <li>Timothy Mou (2020 Summer RA based at CMU), Wyvern Decidable
+    Nominal Type Member Subtyping Implementation, Co-Supervised
+    with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+      (CMU)</a></li>
+  <li>Anlun Xu (Masters at CMU in 2020), Bounded Abstract Effects,
+    Co-Supervised
+    with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+      (CMU)</a></li>
+  <li>Carl Bennett (ENGR489 in 2019), A Study In Mobile App and Web
+    Frameworks</li>
+  <li>Cameron Laing (ENGR489 in 2019), Reproducing an Existing
+    Empirical PL or SE Study</li>
+  <li>Billy Zhu (Masters at CMU in 2018/2019), Nominal Type Members, Co-Supervised
+    with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+      (CMU)</a></li>
+  <li>Henry Nelson (2018 Summer RA based at CMU), Wyvern JavaScript
+    Backend and Bytecode, Co-Supervised
+    with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+      (CMU)</a></li>
+  <li>Justin Lubin (2018 Summer RA based at CMU), Wyvern Effects,
+    Co-Supervised
+    with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+      (CMU)</a></li>
+  <li>Andre Westerlund (ENGR489 in 2018), Wyvern Secure Web
+    Server, Co-Supervised with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+      (CMU)</a></li>
+  <li>Tu Dinh (ENGR489 in 2018), Wyvern REPL, Co-Supervised
+    with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+      (CMU)</a></li>
+  <li>Zacary Paynter (ENGR489 in 2018, Co-Supervised with Lindsay
+    Groves), Non Blocking Priority Queues Review and Performance
+    Comparison</li>
+  <li>Miten Chauhan (ENGR489 in 2017), Industrial Project with PlanIT</li>
+  <li>Neel Patel (ENGR489 in 2017), Industrial Project with
+    PlanIT</li>
+  <li>Callum Gil (ENGR489 in 2017), Industrial Project with Haunt</li>
+  <li>Baptiste Pauget (RA in February - July 2017, Whiley to FPGA,
+    Co-Supervised with David Pearce)</li>
+  <li>Aaron Craig (COMP489 2016/2017, Effects and Capabilities in
+    Wyvern, Co-Supervised with Jonathan Aldrich from CMU and Lindsay
+    Groves)</li>
+  <li>Robbie McKinstry (RA based at CMU in 2016, Wyvern
+    Implementation, Co-Supervised with Jonathan Aldrich from CMU)</li>
+  <li>Luke Inkster (ENGR489 in 2016, Inheritance vs Delegation Study,
+    Co-Supervised with James Noble)</li>
+  <li>Daniel Campbell (COMP489 in 2016, Macros in Rust, Co-Supervised
+    with Nick Cameron from Mozilla Corporation)</li>
+  <li>Aaron Craig (Summer RA in 2015/2016, Verification Support for
+    Wyvern, Co-Supervised with Jonathan Aldrich from CMU and Lindsay
+    Groves)</li>
+  <li>Daniel Campbell (Summer RA in 2015/2016, Tool Support for Macros
+    in Rust, Co-Supervised with Nick Cameron from Mozilla
+    Corporation)</li>
+  <li>Garming Sam (BE Honours in 2015, Refactorings in Rust,
+    Co-Supervised with Nick Cameron from Mozilla Corporation)</li>
+  <li>Jui Deshpande (BE Honours in 2015, Automatic Data Quality
+    Analysis Tool for Airways NZ), Co-Supervised
+    with <a href="http://www.victoria.ac.nz/ecs/staff/hui-ma.aspx">Hui
+    Ma</a></li>
+  <li>Mate Antunovic (BE Honours attempted in 2015, RR, Co-Supervised with
+    Robert O'Callahan from Mozilla Corporation)</li>
+  <li>Julian Mackay (PhD Thesis in 2015 - 2019, Wyvern Type Members),
+    Co-Supervised
+    with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+    (CMU)</a>
+    and <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
+    Groves</a></li>
+  <li>Darya Melicher (PhD Thesis in 2013 - 2019, Wyvern Modules, CMU),
+    Primary Supervisor
+    is <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+      (CMU)</a></li>
+  <li>Troy Shaw (BE Honours Thesis in 2014, Tagged Types
+    Implementation for Wyvern)</li>
+  <li>Tim Sullivan (BSc Honours Thesis in 2014, Interpreter for
+    Grace), Co-Supervised
+    with <a href="http://www.victoria.ac.nz/ecs/staff/james-noble.aspx">James
+      Noble</a></li>
+  <li>Ahmed Khalifa (PhD Thesis started in 2010 and defended in
+    2013, Ownership and Immutability in the Real World), Co-Supervised
+    with <a href="http://www.victoria.ac.nz/ecs/staff/james-noble.aspx">James
+    Noble</a></li>
+  <li>Morgan Atkins (MSc Thesis in 2012, Survey of Concurrency
+    Features in OO Programming Languages), Co-Supervised
+    with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
+    Groves</a></li>
+  <li>Julian Mackay (MSc Thesis in 2012, Mechanised Theorem Proving in
+    COQ for Ownership and Immutability), Co-Supervised
+    with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
+    Groves</a></li>
+  <li>Morgan Atkins (RA in summer 2010/2011, X10 Programming Language
+    and Clocked References)</li>
+  <li>Morgan Atkins (BSc Honours Thesis in 2011, X10 Programming
+    Language)</li>
+  <li>Julian Mackay (BSc Honours Thesis in 2011, Mechanised Theorem
+    Proving in COQ), Co-Supervised
+    with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
+    Groves</a></li>
+  <li>Felix Shi (BE 400-level Thesis in 2011, JavaScript Type
+    Inference), Co-Supervised
+    with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
+    Groves</a></li>
+  <li>Jan Larres (MSc Thesis in 2011, Performance Variations
+    Analysis in Mozilla Firefox), Co-Supervised
+    with <a href="http://www.victoria.ac.nz/smsor/staff/yuichi-hirose.aspx">Yuichi
+      Hirose</a></li>
+  <li>Constantine Dymnikov (MSc Thesis in 2011, Modular
+    Ownership Inference), Co-Supervised
+    with <a href="http://www.victoria.ac.nz/ecs/staff/david-pearce.aspx">David
+      Pearce</a></li>
+  <li>Hien Tran (BE 400-level Thesis in 2010, Automated Analysis of
+    Map Labelling for GIS Users), Co-Supervised
+    with <a href="http://www.victoria.ac.nz/sgees/staff/mairead-deroiste.aspx">Mairead
+      de Roiste</a> from SGEES</li>
+  <li>Hannes Mehnert (RA in summer 2009/2010, Ownership and
+    Immutability, Co-Supervised
+    with <a href="http://www.victoria.ac.nz/ecs/staff/nicholas-cameron.aspx">Nicholas
+      Cameron</a>)</li>
+  <li>Constantine Dymnikov (RA in 2009/2010, Ownership Inference)</li>
+  <li>Andrew Walbran (RA in 2009, OIGJ Compiler)</li>
+  <li>Gustav van der Merwe (RA in 2009, Ownership, Immutability and
+    GADT's)</li>
+  <li>Paley Li (BSc Honours Thesis in 2008, Ownership and
+    Immutability), Co-Supervised
+    with <a href="http://www.victoria.ac.nz/ecs/staff/james-noble.aspx">James
+      Noble</a>
+    and <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
+      Groves</a></li>
+  <li>Andrew Childs (BSc Honours Thesis in 2008, Eliminating Redundant
+    Null Checks), Co-Supervised
+    with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
+      Groves</a></li>
+  <li>Paley Li (RA in 2008, Ownership and Immutability)</li>
+  <li>Radu Muschevici (MSc Thesis in 2007/2008, Multimethods),
+    Co-Supervised
+    with <a href="http://www.victoria.ac.nz/ecs/staff/james-noble.aspx">James
+      Noble</a></li>
+  <li>Neil Ramsay (BIT Thesis in 2007, Software Visualisation),
+    Co-Supervised
+    with <a href="http://www.victoria.ac.nz/ecs/staff/stuart-marshall.aspx">Stuart
+      Marshall</a></li>
+  <li>Leo Gui (BIT Thesis attempted in 2007, Usability of Teaching
+    Tools), Co-Supervised
+    with <a href="http://www.victoria.ac.nz/ecs/staff/stuart-marshall.aspx">Stuart
+      Marshall</a></li>
+  <li>Christo Fogelberg (RA in 2007, Ownership in Collections)</li>
+</ol>
+
+<!--#include virtual="/tail.shtml" -->

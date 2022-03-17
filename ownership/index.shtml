@@ -1,0 +1,75 @@
+<!--#set var="h1" value="Ownership" -->
+<!--#include virtual="/~alex/head.shtml" -->
+
+
+<p>I am interested in Ownership (Ownership Types in pariticular). Here
+is some relevant information.</p>
+
+
+<h2>Ownership Mailing List</h2>
+
+<p>Yes, there is one! To subscribe, go to the <a
+href="http://www.mcs.vuw.ac.nz/mailman/listinfo.cgi/ownership">Ownership
+List Home Page</a>.</p>
+
+<p>A lot of the ownership types researchers and students are already
+on the list and we are interested in hearing more about ownership
+research around the world!</p>
+
+
+<h2>Ownership Compilers</h2>
+
+<p>I am aware of several compilers that are available for download:</p>
+
+<ul>
+  <li><a href="http://homepages.ecs.vuw.ac.nz/~ahmkhal/">OGJ+</a> by Ahmed Khalifa</li>
+  <li><a href="http://www.archjava.org/">Alias Java</a> by Jonathan Aldrich</li>
+  <li><a href="http://www.objectteams.org/">Object Teams</a> by Stephan Herrmann</li>
+  <li><a href="http://www.ecs.vuw.ac.nz/~alex/software/">Ownership Generic Java</a> by Alex Potanin</li>
+</ul>
+
+<p>Please let me know if there are more! Thank you.</p>
+
+
+<h2>Object Graphs</h2>
+
+<p><a href="http://www.st.cs.uni-sb.de/memgraphs/">Memory Graphs</a> - Object graphs of C++ programs.</p>
+
+
+<h2>Ownership Tree Visualisations</h2>
+
+<p>This page also contains several visualisations of ownership trees
+  obtained using Fish Eye Bean
+  and <a href="http://graphics.stanford.edu/~munzner/h3/">H3Viewer</a>.</p>
+  
+
+<table width="100%">
+  <tr width="100%">
+    <td width="50%" align="center">
+      <p><a href="./images/HelloWorldH3Viewer.png"><img src="./images/HelloWorldH3Viewer_Small.png" alt="Hello World using H3Viewer"></a></p>
+      <p><b>Hello World Ownership Tree (H3Viewer)</b></p>
+    </td>
+    <td width="50%" align="center">
+      <p><a href="./images/LinkedListH3Viewer.png"><img src="./images/LinkedListH3Viewer_Small.png" alt="Linked List using H3Viewer"></a></p>
+      <p><b>Linked List Ownership Tree (H3Viewer)</b></p>
+    </td>
+  </tr>
+  <tr width="100%">
+    <td width="50%" align="center">
+      <p><a href="./images/LogFileSystemH3Viewer1.png"><img src="./images/LogFileSystemH3Viewer1_Small.png" alt="Log File System using H3Viewer (1)"></a></p>
+      <p><b>Log File System Ownership Tree (H3Viewer) Screenshot 1</b></p>
+    </td>
+    <td width="50%" align="center">
+      <p><a href="./images/LogFileSystemH3Viewer2.png"><img src="./images/LogFileSystemH3Viewer2_Small.png" alt="Log File System using H3Viewer (2)"></a></p>
+      <p><b>Log File System Ownership Tree (H3Viewer) Screenshot 2</b></p>
+    </td>
+  </tr>
+  <tr width="100%">
+    <td colspan="2" align="center">
+      <p><a href="./images/HelloWorldFishEye.png"><img src="./images/HelloWorldFishEye_Small.png" alt="Hello World using Fish Eye"></a></p> <p><b>Hello World Ownership Tree (Fish Eye)</b></p>
+    </td>
+  </tr>
+</table>
+
+
+<!--#include virtual="/tail.shtml" -->

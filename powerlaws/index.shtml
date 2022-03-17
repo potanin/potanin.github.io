@@ -1,0 +1,56 @@
+<!--#set var="h1" value="Power Laws in Object Graphs" -->
+<!--#include virtual="/~alex/head.shtml" -->
+
+
+
+<p>In here we present a collection of LOG-scale plots of the
+distributions of the number of references coming in and out of objects
+inside the program's memory. They tend to be lines, thus showing the
+presence of power law dependency in object graphs.</p>
+
+
+<table width="100%">
+<tr width="100%">
+<td width="50%">
+<a href="./images/IncomingReferencesPL.png"><img src="./images/IncomingReferencesPL_Small.png" alt="Incoming References LOG(# references) vs LOG(# objects)"></a>
+<p><b>Incoming References LOG(# references) vs LOG(# objects)</b></p>
+</td>
+<td width="50%">
+<a href="./images/OutgoingReferencesPL.png"><img src="./images/OutgoingReferencesPL_Small.png" alt="Outgoing References LOG(# references) vs LOG(# objects)"></a>
+<p><b>Outgoing References LOG(# references) vs LOG(# objects)</b></p>
+</td>
+</tr>
+<tr width="100%">
+<td width="50%">
+<a href="./images/IncomingReferencesZipf.png"><img src="./images/IncomingReferencesZipf_Small.png" alt="Incoming References LOG(# rank) vs LOG(# objects)"></a>
+<p><b>Incoming References LOG(# rank) vs LOG(# objects)</b></p>
+</td>
+<td width="50%">
+<a href="./images/OutgoingReferencesZipf.png"><img src="./images/OutgoingReferencesZipf_Small.png" alt="Outgoing References LOG(# rank) vs LOG(# objects)"></a>
+<p><b>Outgoing References LOG(# rank) vs LOG(# objects)</b></p>
+</td>
+</tr>
+<tr width="100%">
+<td width="50%">
+<a href="./images/IncomingReferencesFraction.png"><img src="./images/IncomingReferencesFraction_Small.png" alt="Incoming References LOG(# references) vs LOG(fraction of objects having more references)"></a>
+<p><b>Incoming References LOG(# references) vs LOG(fraction of objects having more references)</b></p>
+</td>
+<td width="50%">
+<a href="./images/StaticIncomingReferences.png"><img src="./images/StaticIncomingReferences_Small.png" alt="Static Incoming References LOG(# references) vs LOG(# objects)"></a>
+<p><b>Static Incoming References LOG(# references) vs LOG(# objects)</b></p>
+</td>
+</tr>
+<tr width="100%">
+<td width="50%">
+<img src="./images/InVersusOut.png" alt="Incoming References vs Outgoing References">
+<p><b>Incoming References vs Outgoing References together with the number of objects (white means many, black means few)</b></p>
+</td>
+<td width="50%">
+<img src="./images/InVersusOutLOG.png" alt="Incoming References vs Outgoing References (LOG-LOG Scale)">
+<p><b>Incoming References vs Outgoing References (LOG-LOG Scale) together with the number of objects (white means many, black means few)</b></p>
+</td>
+</tr>
+</table>
+
+
+<!--#include virtual="/tail.shtml" -->

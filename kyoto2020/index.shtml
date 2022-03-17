@@ -1,0 +1,34 @@
+<!--#set var="h1" value="Kyoto University Graduate Seminars in Winter 2019/2020" -->
+<!--#include virtual="/~alex/head.shtml" -->
+
+
+<h2>Seminar Schedule</h2>
+
+<p><i>All lectures are at 10:30am in Research Building 8, Lecture Room
+    3 of Kyoto University.</i></p>
+
+<ol>
+  <li><i>Friday 13th of December, 2019:</i> Ownership in Collections
+    (<a href="./files/l1-ownership-in-collections.pdf">slides</a>).</li>
+  <li><i>Friday 20th of December, 2019:</i> Generic Ownership and
+    Immutability (<a href="./files/l2-oigj.pdf">slides</a>).</li>
+  <li><i>Friday 10th of January, 2020:</i> Wyvern Overview
+    (<a href="./files/l3-wyvern-overview.pdf">slides</a>). <a href="https://github.com/wyvernlang/wyvern/tree/master/examples/AlexTalkDemos">Wyvern
+    Demos</a>.</li>
+  <li><i>Thursday 16th of January, 2020:</i> Decidable Subtyping for
+    Path Dependent Types
+    (<a href="./files/l4-decidable-subtyping-for-path-dependent-types.pdf">slides</a>).</li>
+  <li><i>Friday 24th of January, 2020:</i> Wyvern Formalisation
+    (<a href="./files/l5-wyvern-formalisation.pdf">slides</a>).</li>
+  <li><i>Friday 31st of January, 2020:</i> Capabilities for Effects
+    (<a href="./files/l6-capabilities-for-effects.pdf">slides</a>).
+</ol>
+
+<h2>Assignment</h2>
+
+<p>On Ownership versus Capabilities
+  (<a href="./files/assignment-o-vs-c.pdf">PDF</a>).</p>
+<p><i>Deadline: 10:30am Friday 31st of January 2020 via Email
+  to <a href="mailto:alex@ecs.vuw.ac.nz">alex@ecs.vuw.ac.nz</a>.</p>
+
+<!--#include virtual="/tail.shtml" -->

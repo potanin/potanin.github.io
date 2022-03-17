@@ -1,0 +1,13 @@
+#!/bin/sh
+#<?php /*
+export REDIRECT_STATUS=200
+export SCRIPT_NAME=$PATH_INFO
+unset REDIRECT_URL
+PHP=/usr/pkg/libexec/cgi-bin/php
+exec $PHP
+# */ ?>
+
+PHP could not execute that page.
+<p>
+Please be sure that you have a valid php.ini installed, and that the doc_root points to your public_html directory.
+
