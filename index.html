@@ -52,6 +52,21 @@
 
       .w3-wide {letter-spacing: 10px;}
       .w3-hover-opacity {cursor: pointer;}
+
+      .filler {
+          display: flex;
+          flex-direction: column;
+          width: 300px;
+          heigth: 100%;
+      }
+
+      .first {
+          height: 50px;
+      }
+
+      .second {
+          flex-grow: 1;
+      }
       
       /* Turn off parallax scrolling for tablets and phones */
       @media only screen and (max-device-width: 1600px) {
@@ -64,6 +79,44 @@
   </head>
   <body>
 
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+           href="javascript:void(0);"
+           onclick="toggleFunction()"
+           title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="https://potanin.github.io/" class="w3-bar-item w3-button">HOME</a>
+        <a href="./students.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> STUDENTS</a>
+        <a href="./teaching.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> TEACHING</a>
+        <a href="./committees.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> COMMITTEES</a>
+        <a href="https://alexpotanin.blogspot.com/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> BLOG</a>
+        <a href="./files/alexpotanincv.pdf" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> CV</a>
+        <a href="mailto:alex.potanin@anu.edu.au" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> EMAIL</a>
+        <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a> -->
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="./students.html" class="w3-bar-item w3-button" onclick="toggleFunction()">STUDENTS</a>
+        <a href="./teaching.html" class="w3-bar-item w3-button" onclick="toggleFunction()">TEACHING</a>
+        <a href="./committees.html" class="w3-bar-item w3-button" onclick="toggleFunction()">COMMITTEES</a>
+        <a href="https://alexpotanin.blogspot.com/" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+        <a href="./files/alexpotanincv.pdf" class="w3-bar-item w3-button" onclick="toggleFunction()">CV</a>
+        <a href="mailto:alex.potanin@anu.edu.au" class="w3-bar-item w3-button" onclick="toggleFunction()">EMAIL</a>
+        <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
+      </div>
+    </div>
+
+    <div class="filler" id="home">
+      <div class="first"></div>
+      <div class="second"></div>
+    </div>
+
     <p align="center">
       <a href="./images/AlexPotaninVicBooks.jpg">
         <img width="400"
@@ -71,12 +124,6 @@
              src="./images/AlexPotaninVicBooks_Small.jpg"
              alt="Alex Potanin"/></a>
     </p>
-
-    <ul>
-      <li>Email: <a href="mailto:alex.potanin@anu.edu.au"><code>alex.potanin@anu.edu.au</code></a></li>
-      <li>Blog: <a href="http://alexpotanin.blogspot.com/">Alex Potanin's Blog</a></li>
-      <li>CV: <a href="./files/alexpotanincv.pdf">One Page PDF</a></li>
-    </ul>
 
     <h2>Projects for Potential Students</h2>
 
@@ -98,21 +145,6 @@
         </ul>
       </li>
     </ul>
-
-    <h2>Students</h2>
-
-    Please <a href="./students.html">click here</a> to see a list of my
-    current and past thesis students.
-
-    <h2>Teaching</h2>
-
-    Please <a href="./teaching.html">click here</a> to see a list of my
-    current and past courses.
-
-    <h2>Conference Committees</h2>
-
-    Please <a href="./committees.html">click here</a> to see a list of my
-    current and past conference committee memberships.
 
     <h2>Publications (Feel Free to Email Me for a Copy)</h2>
 
@@ -587,188 +619,235 @@
 
       <li>Mairead de Roiste, Hien Tran, and Alex Potanin. <i>What makes a
           map?</i> At Ireland Organisation for Geographic Information
-        Conference (IRLOGI) 2010.</i></li>
+        Conference (IRLOGI) 2010.</li>
 
-<li>Chris Andreae, Donald Gordon, Alex Potanin, James Noble, Robert Biddle.
-  <i>Terrier: Static Query-Based Debugging in Eclipse.</i>  Poster
-  in <a href="http://www.oopsla.org/">Conference on Object-Oriented
-    Programming, Systems, Languages, and Applications</a>, Vancouver,
-  Canada, October 2004.</li>
+      <li>Chris Andreae, Donald Gordon, Alex Potanin, James Noble, Robert Biddle.
+        <i>Terrier: Static Query-Based Debugging in Eclipse.</i>  Poster
+        in <a href="http://www.oopsla.org/">Conference on Object-Oriented
+          Programming, Systems, Languages, and Applications</a>, Vancouver,
+        Canada, October 2004.</li>
+      
+      <li>Alex Potanin.
+        <i><a href="./files/PotaninOOPSLA2004DS.pdf">Generic Ownership:
+            Practical Ownership Control in Programming Languages</a>.</i>  In
+        Doctoral Symposium Proceedings
+        of <a href="http://www.oopsla.org/">Conference on Object-Oriented
+          Programming, Systems, Languages, and Applications</a>, Vancouver,
+        Canada, October 2004.</li>
+      
+      <li>Alex Potanin.
+        <i><a href="./files/PotaninPracticalOwnershipControlInProgrammingLanguagesECOOP2004DS.pdf">Practical
+            Ownership Control in Programming Languages</a>.</i>  In Doctoral
+        Symposium Proceedings of <a href="http://www.ecoop.org/">European
+          Conference for Object-Oriented Programming</a>, Oslo, Norway, June
+        2004.</li>
+      
+      <li>Alex Potanin.
+        <i><a href="./files/PotaninToolForOwnershipAndConfinementAnalysisOOPSLA02Abstract.pdf">A
+            Tool for Ownership and Confinement Analysis of the Java Object
+            Graph</a>.</i>  Conference poster and student research
+        competition entry
+        in <a href="http://www.oopsla.org/">Object-Oriented
+          Programming Systems, Languages, and Applications</a>
+        Conference, Seattle, USA, November 2002.  The poster itself is
+        available in Microsoft PowerPoint
+        format <a href="./files/OOPSLA02PosterAlexPotanin.ppt">here</a>.
+        This entry was awarded a second place in the competition in
+        the graduate division, even though I was technically an
+        undergraduate.  The results are
+        available <a href="http://www.acm.org/src/subpages/results.html">here</a>.
+        (<b>Update:</b> This entry was accepted into the ACM Student
+        Research Competition Grand Finals and can be found in HTML
+        format <a href="http://www.acm.org/src/subpages/ACMGFAlexPotanin/alexpotanin.html">here</a>.
+        It was awarded a second place overall in the undergraduate
+        category as can be
+        found <a href="http://www.acm.org/src/subpages/results.html">here</a>.)</li>
 
-<li>Alex Potanin.
-  <i><a href="./files/PotaninOOPSLA2004DS.pdf">Generic Ownership:
-      Practical Ownership Control in Programming Languages</a>.</i>  In
-  Doctoral Symposium Proceedings
-  of <a href="http://www.oopsla.org/">Conference on Object-Oriented
-    Programming, Systems, Languages, and Applications</a>, Vancouver,
-  Canada, October 2004.</li>
+    </ol>
 
-<li>Alex Potanin.
-  <i><a href="./files/PotaninPracticalOwnershipControlInProgrammingLanguagesECOOP2004DS.pdf">Practical
-      Ownership Control in Programming Languages</a>.</i>  In Doctoral
-  Symposium Proceedings of <a href="http://www.ecoop.org/">European
-    Conference for Object-Oriented Programming</a>, Oslo, Norway, June
-  2004.</li>
+    <h3>Theses</h3>
 
-<li>Alex Potanin.
-  <i><a href="./files/PotaninToolForOwnershipAndConfinementAnalysisOOPSLA02Abstract.pdf">A
-      Tool for Ownership and Confinement Analysis of the Java Object
-      Graph</a>.</i>  Conference poster and student research
-  competition entry
-  in <a href="http://www.oopsla.org/">Object-Oriented
-    Programming Systems, Languages, and Applications</a>
-  Conference, Seattle, USA, November 2002.  The poster itself is
-  available in Microsoft PowerPoint
-  format <a href="./files/OOPSLA02PosterAlexPotanin.ppt">here</a>.
-  This entry was awarded a second place in the competition in
-  the graduate division, even though I was technically an
-  undergraduate.  The results are
-  available <a href="http://www.acm.org/src/subpages/results.html">here</a>.
-  (<b>Update:</b> This entry was accepted into the ACM Student
-  Research Competition Grand Finals and can be found in HTML
-  format <a href="http://www.acm.org/src/subpages/ACMGFAlexPotanin/alexpotanin.html">here</a>.
-  It was awarded a second place overall in the undergraduate
-  category as can be
-  found <a href="http://www.acm.org/src/subpages/results.html">here</a>.)</li>
+    <ol start="79">
 
-</ol>
+      <li>Alex Potanin.
+        <i><a href="./files/PhDAlexPotanin.pdf">Generic Ownership - A
+            Practical Approach to Ownership and Confinement in OO Programming
+            Languages</a>.</i>  My PhD thesis, awarded in 2007.</li>
 
-<h3>Theses</h3>
+      <li>Alex Potanin.
+        <i><a href="./files/HonoursAlexPotanin.pdf">The Fox - A Tool for
+            Object Graph Analysis</a>.</i>  Honours report which resulted in
+        First Class Honours at <a href="http://www.vuw.ac.nz/"> Victoria
+          University of Wellington</a> in 2002.  My supervisors
+        were <a href="http://ecs.victoria.ac.nz/Main/JamesNoble">James
+          Noble</a>
+        and <a href="http://ecs.victoria.ac.nz/Main/RobertBiddle">Robert
+          Biddle</a>.  The PDFLaTeX source is
+        available <a href="./files/HonoursAlexPotaninPDFLaTeX.tgz">here</a>.</li>
+      
+    </ol>
 
-<ol start="79">
+    <h3>Patents</h3>
 
-  <li>Alex Potanin.
-    <i><a href="./files/PhDAlexPotanin.pdf">Generic Ownership - A
-        Practical Approach to Ownership and Confinement in OO Programming
-        Languages</a>.</i>  My PhD thesis, awarded in 2007.</li>
+    <ol start="81">
 
-  <li>Alex Potanin.
-    <i><a href="./files/HonoursAlexPotanin.pdf">The Fox - A Tool for
-        Object Graph Analysis</a>.</i>  Honours report which resulted in
-    First Class Honours at <a href="http://www.vuw.ac.nz/"> Victoria
-      University of Wellington</a> in 2002.  My supervisors
-    were <a href="http://ecs.victoria.ac.nz/Main/JamesNoble">James
-      Noble</a>
-    and <a href="http://ecs.victoria.ac.nz/Main/RobertBiddle">Robert
-      Biddle</a>.  The PDFLaTeX source is
-    available <a href="./files/HonoursAlexPotaninPDFLaTeX.tgz">here</a>.</li>
-  
-</ol>
+      <li><i><a href="http://appft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=1&f=G&l=50&co1=AND&d=PG01&s1=Innaworks&OS=Innaworks&RS=Innaworks">Software
+            Translation</a>.</i> US Patent filed in March 2008 and <a href="http://www.freepatentsonline.com/EP2122464.html">EU Patent EP2122464</a> filed in February 2008.</li>
+      
+    </ol>
 
-<h3>Patents</h3>
+    <h3>Technical Reports</h3>
 
-<ol start="81">
+    <p><b>NB!</b> More TR's can be found by
+      following <a href="http://www.mcs.vuw.ac.nz/comp/Publications/index-byname.html#ALEX_POTANIN">this
+        link to MCS TR's</a> and
+      also <a href="http://ecs.victoria.ac.nz/Main/TechnicalReportSeries">this
+        link to ECS TR's</a>.</p>
 
-  <li><i><a href="http://appft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=1&f=G&l=50&co1=AND&d=PG01&s1=Innaworks&OS=Innaworks&RS=Innaworks">Software
-        Translation</a>.</i> US Patent filed in March 2008 and <a href="http://www.freepatentsonline.com/EP2122464.html">EU Patent EP2122464</a> filed in February 2008.</li>
-  
-</ol>
+    <ol start="82">
 
-<h3>Technical Reports</h3>
+      <li>Aaron Craig, Alex Potanin, Lindsay Groves and Jonathan
+        Aldrich. <i><a href="http://ecs.victoria.ac.nz/foswiki/pub/Main/TechnicalReportSeries/ECSTR18-02.pdf">Capabilities:
+	    Effects for Free</a></i>. ECSTR-18-02.</li>
+      
+      <li>Darya Melicher, Yangqingwei Shi, Alex Potanin, Jonathan
+        Aldrich. <i><a href="http://reports-archive.adm.cs.cmu.edu/anon/isr2017/abstracts/17-106.html">A
+	    Capability-Based Module System for Authority
+	    Control</a></i>. CMU-ISR-TR-17-106.</li>
+      
+      <li>Cyrus Omar, Darya Kurilova, Ligia Nistor, Benjamin Chung, Alex
+        Potanin, and Jonathan
+        Aldrich. <i><a href="http://reports-archive.adm.cs.cmu.edu/anon/isr2014/abstracts/14-106.html">Safely
+	    Composable Type-Specific Languages (Technical
+	    Report)</a></i>. CMU-ISR-TR-14-106.</li>
+      
+      <li>Marco Servetto and Alex
+        Potanin. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR12-18.pdf">Balloon
+	    Immutable Java</a></i> ECS-TR-12-18.</li>
+      
+      <li>Marco Servetto and Alex
+        Potanin. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR12-19.pdf">Our
+	    Billion Dollar Fix</a></i> ECS-TR-12-19.</li>
+      
+      <li>Jan Larres, Alex Potanin, and Yuichi
+        Hirose. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR12-14.pdf">A
+	    Study of Performance Variations in the Mozilla Firefox Web
+	    Browser</a></i> ECS-TR-12-14.</li>
+      
+      <li>Julian Mackay, Hannes Mehnert, Alex Potanin, Lindsay Groves,
+        Nicholas
+        Cameron. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR12-12.pdf">Featherweight
+	    Java with Assignment and Immutability in Coq</a></i> ECS-TR-12-11.</li>
+      
+      <li>Atkins, Alex Potanin, Lindsay
+        Groves. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR12-11.pdf">Clocked
+	    References in X10</a></i> ECS-TR-12-11.</li>
+      
+      <li>Alex Potanin, Monique Damitio, Shane Markstrum, Christo
+        Fogelberg, Andrew Walbran, James
+        Noble. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR11-06.pdf">Are
+	    Your Aliases Really Necessary?</a></i> ECS-TR-11-06.</li>
+      
+      <li>Hannes Mehnert, Nicholas Cameron, Alex
+        Potanin. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR10-20.pdf">Relaxing
+	    Ownership with Immutability</a></i> ECS-TR-10-20.</li>
+      
+      <li>Yoav Zibin, Alex Potanin, Paley Li, Mahmood Ali, Michael
+        D. Ernst. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR10-15.pdf">Ownership
+	    and Immutability Generic Java (OIGJ) with Owners as
+	    Modifiers</a></i> ECS-TR-10-15.</li>
+      
+      <li>Paley Li, Yoav Zibin, Alex Potanin, and Michael
+        D. Ernst. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR10-16.pdf">Featherweight
+	    OIGJ Technical Report</a></i> ECS-TR-10-16.</li>
+      
+      <li>Yoav Zibin, Alex Potanin, Shay Artzi, Adam Kiezun, and Michael
+        D. Ernst.
+        <i><a href="https://dspace.mit.edu/handle/1721.1/36850">Object and
+	    Reference Immutability using Java
+	    Generics</a>. MIT-CSAIL-TR-2007-018.</i>
+      </li>
+      
+      <li>Alex Potanin, Dave Clarke, James Noble, Robert Biddle.
+        <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR09-02.pdf">Featherweight
+	    Generic Ownership Technical Report</a>.</i>  This TR gives full
+        details of the FGO type system with all the proofs for type
+        soundness and ownership invariants.  A draft version appeared as a
+        discussion paper in FTfJP2005 workshop (please see above). ECS-TR-09-02.</li>
+      
+    </ol>
 
-<p><b>NB!</b> More TR's can be found by
-  following <a href="http://www.mcs.vuw.ac.nz/comp/Publications/index-byname.html#ALEX_POTANIN">this
-    link to MCS TR's</a> and
-  also <a href="http://ecs.victoria.ac.nz/Main/TechnicalReportSeries">this
-    link to ECS TR's</a>.</p>
+    <h2>Invited Talks</h2>
 
-<ol start="82">
+    <ol>
+      <li><i>Panel on Online Lectures.</i> Invited Panel Member at ICFP
+        2020 Panel. (<i>August, 2020</i>)</li>
+      <li><i>Wyvern Project Overview.</i> Invited Local Visitor Talk at
+        IFIP WG 2.4. (<i>April, 2019</i>)</li>
+      <li><i>Are Your Incoming Aliases Really Necessary? Counting the Cost
+          of Object Ownership.</i> Invited Talk at the International Workshop on
+        Aliasing, Confinement, and Ownership (IWACO) 2017.</li>
+      <li><i>Life in Academia after your PhD.</i>
+        At <a href="http://2015.splashcon.org/track/splash2015-plmw">PLMW
+          2015</a>.</li>
+      <li><i>Wyvern Formalisation.</i> At NII Shonan Meeting 63 in 2015 on
+        <a href="http://shonan.nii.ac.jp/seminar/seminardetails063/">Semantics
+          and Verification of Object-Oriented Languages</a>. (<i>21-25
+          September, 2015</i>)</li>
+      <li><i>Post PhD/Masters, what are your options?</i> Invited panel
+        member at NZCSRSC 2010, Wellington, NZ. (<i>13th of April,
+          2010</i>)</li>
+      <li><i>Young guns/object orientation: the next generation</i>.
+        Invited panel member at OOPSLA 2006, Portland, Oregon,
+        USA. (<i>October, 2006</i>)</li>
+    </ol>
 
-  <li>Aaron Craig, Alex Potanin, Lindsay Groves and Jonathan
-    Aldrich. <i><a href="http://ecs.victoria.ac.nz/foswiki/pub/Main/TechnicalReportSeries/ECSTR18-02.pdf">Capabilities:
-	Effects for Free</a></i>. ECSTR-18-02.</li>
-  
-  <li>Darya Melicher, Yangqingwei Shi, Alex Potanin, Jonathan
-    Aldrich. <i><a href="http://reports-archive.adm.cs.cmu.edu/anon/isr2017/abstracts/17-106.html">A
-	Capability-Based Module System for Authority
-	Control</a></i>. CMU-ISR-TR-17-106.</li>
-  
-  <li>Cyrus Omar, Darya Kurilova, Ligia Nistor, Benjamin Chung, Alex
-    Potanin, and Jonathan
-    Aldrich. <i><a href="http://reports-archive.adm.cs.cmu.edu/anon/isr2014/abstracts/14-106.html">Safely
-	Composable Type-Specific Languages (Technical
-	Report)</a></i>. CMU-ISR-TR-14-106.</li>
-  
-  <li>Marco Servetto and Alex
-    Potanin. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR12-18.pdf">Balloon
-	Immutable Java</a></i> ECS-TR-12-18.</li>
-  
-  <li>Marco Servetto and Alex
-    Potanin. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR12-19.pdf">Our
-	Billion Dollar Fix</a></i> ECS-TR-12-19.</li>
-  
-  <li>Jan Larres, Alex Potanin, and Yuichi
-    Hirose. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR12-14.pdf">A
-	Study of Performance Variations in the Mozilla Firefox Web
-	Browser</a></i> ECS-TR-12-14.</li>
-  
-  <li>Julian Mackay, Hannes Mehnert, Alex Potanin, Lindsay Groves,
-    Nicholas
-    Cameron. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR12-12.pdf">Featherweight
-	Java with Assignment and Immutability in Coq</a></i> ECS-TR-12-11.</li>
-  
-  <li>Atkins, Alex Potanin, Lindsay
-    Groves. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR12-11.pdf">Clocked
-	References in X10</a></i> ECS-TR-12-11.</li>
-  
-  <li>Alex Potanin, Monique Damitio, Shane Markstrum, Christo
-    Fogelberg, Andrew Walbran, James
-    Noble. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR11-06.pdf">Are
-	Your Aliases Really Necessary?</a></i> ECS-TR-11-06.</li>
-  
-  <li>Hannes Mehnert, Nicholas Cameron, Alex
-    Potanin. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR10-20.pdf">Relaxing
-	Ownership with Immutability</a></i> ECS-TR-10-20.</li>
-  
-  <li>Yoav Zibin, Alex Potanin, Paley Li, Mahmood Ali, Michael
-    D. Ernst. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR10-15.pdf">Ownership
-	and Immutability Generic Java (OIGJ) with Owners as
-	Modifiers</a></i> ECS-TR-10-15.</li>
-  
-  <li>Paley Li, Yoav Zibin, Alex Potanin, and Michael
-    D. Ernst. <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR10-16.pdf">Featherweight
-	OIGJ Technical Report</a></i> ECS-TR-10-16.</li>
-  
-  <li>Yoav Zibin, Alex Potanin, Shay Artzi, Adam Kiezun, and Michael
-    D. Ernst.
-    <i><a href="https://dspace.mit.edu/handle/1721.1/36850">Object and
-	Reference Immutability using Java
-	Generics</a>. MIT-CSAIL-TR-2007-018.</i>
-  </li>
-  
-  <li>Alex Potanin, Dave Clarke, James Noble, Robert Biddle.
-    <i><a href="http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR09-02.pdf">Featherweight
-	Generic Ownership Technical Report</a>.</i>  This TR gives full
-    details of the FGO type system with all the proofs for type
-    soundness and ownership invariants.  A draft version appeared as a
-    discussion paper in FTfJP2005 workshop (please see above). ECS-TR-09-02.</li>
-  
-</ol>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+      <!--
+          <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+          </div>
+          -->
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    </footer>
 
-<h2>Invited Talks</h2>
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+          var captionText = document.getElementById("caption");
+          captionText.innerHTML = element.alt;
+      }
 
-<ol>
-  <li><i>Panel on Online Lectures.</i> Invited Panel Member at ICFP
-    2020 Panel. (<i>August, 2020</i>)</li>
-  <li><i>Wyvern Project Overview.</i> Invited Local Visitor Talk at
-    IFIP WG 2.4. (<i>April, 2019</i>)</li>
-  <li><i>Are Your Incoming Aliases Really Necessary? Counting the Cost
-      of Object Ownership.</i> Invited Talk at the International Workshop on
-    Aliasing, Confinement, and Ownership (IWACO) 2017.</li>
-  <li><i>Life in Academia after your PhD.</i>
-    At <a href="http://2015.splashcon.org/track/splash2015-plmw">PLMW
-      2015</a>.</li>
-  <li><i>Wyvern Formalisation.</i> At NII Shonan Meeting 63 in 2015 on
-    <a href="http://shonan.nii.ac.jp/seminar/seminardetails063/">Semantics
-      and Verification of Object-Oriented Languages</a>. (<i>21-25
-      September, 2015</i>)</li>
-  <li><i>Post PhD/Masters, what are your options?</i> Invited panel
-    member at NZCSRSC 2010, Wellington, NZ. (<i>13th of April,
-      2010</i>)</li>
-  <li><i>Young guns/object orientation: the next generation</i>.
-    Invited panel member at OOPSLA 2006, Portland, Oregon,
-    USA. (<i>October, 2006</i>)</li>
-</ol>
+      // Change style of navbar on scroll
+      window.onscroll = function() {myFunction()};
+      function myFunction() {
+          var navbar = document.getElementById("myNavbar");
+          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+              navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+          } else {
+              navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+          }
+      }
 
-</body>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+              x.className += " w3-show";
+          } else {
+              x.className = x.className.replace(" w3-show", "");
+          }
+      }
+    </script>
+
+  </body>
 </html>
