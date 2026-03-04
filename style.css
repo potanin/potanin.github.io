@@ -305,6 +305,16 @@ a:hover {
   display: block;
 }
 
+a.stat-item {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s;
+}
+
+a.stat-item:hover {
+  opacity: 0.7;
+}
+
 .stat-item .stat-label {
   font-size: 0.85rem;
   color: var(--text-light);
