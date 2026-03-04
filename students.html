@@ -1,426 +1,437 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Students of Alex Potanin</title>
+    <title>Students - Alex Potanin</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-      body, html {
-          height: 100%;
-          /* color: #777; */
-          line-height: 1.8;
-      }
-
-      .w3-wide {letter-spacing: 10px;}
-      .w3-hover-opacity {cursor: pointer;}
-
-      .filler {
-          display: flex;
-          flex-direction: column;
-          width: 300px;
-          heigth: 100%;
-      }
-
-      .first {
-          height: 50px;
-      }
-
-      .second {
-          flex-grow: 1;
-      }
-      
-      /* Turn off parallax scrolling for tablets and phones */
-      @media only screen and (max-device-width: 1600px) {
-          .bgimg-1, .bgimg-2, .bgimg-3 {
-              background-attachment: scroll;
-              min-height: 400px;
-          }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    
-    <!-- Navbar (sit on top) -->
+
+    <!-- Navbar -->
     <div class="w3-top">
       <div class="w3-bar" id="myNavbar">
-        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right"
            href="javascript:void(0);"
            onclick="toggleFunction()"
            title="Toggle Navigation Menu">
           <i class="fa fa-bars"></i>
         </a>
-        <a href="https://potanin.github.io/" class="w3-bar-item w3-button">HOME</a>
-        <a href="./students.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> STUDENTS</a>
+        <a href="./" class="w3-bar-item w3-button">HOME</a>
+        <a href="./students.html" class="w3-bar-item w3-button w3-hide-small nav-active"><i class="fa fa-users"></i> STUDENTS</a>
+        <a href="./publications.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file-text-o"></i> PUBLICATIONS</a>
         <a href="./teaching.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-graduation-cap"></i> TEACHING</a>
-        <a href="./committees.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> COMMITTEES</a>
+        <a href="./committees.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-institution"></i> SERVICE</a>
         <a href="mailto:alex.potanin@anu.edu.au" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> EMAIL</a>
-        <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-          <i class="fa fa-search"></i>
-        </a> -->
       </div>
-
-      <!-- Navbar on small screens -->
-      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
         <a href="./students.html" class="w3-bar-item w3-button" onclick="toggleFunction()">STUDENTS</a>
+        <a href="./publications.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PUBLICATIONS</a>
         <a href="./teaching.html" class="w3-bar-item w3-button" onclick="toggleFunction()">TEACHING</a>
-        <a href="./committees.html" class="w3-bar-item w3-button" onclick="toggleFunction()">COMMITTEES</a>
+        <a href="./committees.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVICE</a>
         <a href="mailto:alex.potanin@anu.edu.au" class="w3-bar-item w3-button" onclick="toggleFunction()">EMAIL</a>
-        <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
       </div>
     </div>
 
-    <div class="filler" id="home">
-      <div class="first"></div>
-      <div class="second"></div>
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="container">
+        <h1>Students</h1>
+        <p>Current and past research students and postdocs</p>
+      </div>
     </div>
 
-    <p>Current:</p>
-    
-    <ol>
+    <!-- Current Students -->
+    <div class="section">
+      <div class="container">
+        <h2 class="section-title">Current Students</h2>
+        <p class="section-subtitle">Postdocs, PhD students, Honours students, and research assistants</p>
 
-      <li>Yan Liu (Research Fellow (Postdoc) at ANU 2025 - 2027)</li>
-      <!-- <li>Vincent Jackson (Research Fellow (Postdoc) at UNSW 2026
-	   - 2027)</li> -->
-      <li>Sasha Pak (PhD 2024 - 2027), Co-Supervised
-        with <a href="https://ilyasergey.net/">Ilya Sergey</a> at NUS
-        and <a href="https://fabian.muehlboeck.name/#about">Fabian
-          Muehlboeck</a>, Rust Made Easier</li>
-      <li>Edwin Singh (PhD 2022 - 2028 (part time)), Co-Supervised
-        with <a href="https://people.wgtn.ac.nz/jennifer.ferreira">Jennifer
-          Ferreira</a> at VUW
-        and <a href="https://comp.anu.edu.au/people/alwen-tiu/">Alwen
-          Tiu</a>, Why Language Designers Do Modules The Way They Do
-        (Grounded Theory Study)</li>
-      <li>Abolfazl Sharifi (PhD 2026 - 2030), Co-Supervisor TBC, Topic TBC.</li>
-      <li>Zara Hassan (PhD 2023 - 2025),
-        Co-Supervised <a href="https://ctreude.ca/">Christoph
-          Treude</a> at SMU
-        and <a href="https://cecc.anu.edu.au/people/michael-norrish">Michael
-          Norrish</a>
-        and <a href="https://cecc.anu.edu.au/people/graham-williams">Graham
-          Williams</a>, Reprodicibility Debt in Scientific
-        Software</li>
-      <li>Haoyu Wu (PhD 2025 - 2028), Co-Supervised
-        with <a href="https://fabian.muehlboeck.name/#about">Fabian
-          Muehlboeck</a>, Nomnom Type Checking</li>
-      <li>Carlo Zancanaro (PhD 2026 - 2029), Co-Supervised
-        with <a href="https://fabian.muehlboeck.name/#about">Fabian
-          Muehlboeck</a>, Gradual Typing and Type Polymorphism</li>
-      <li>Alyssa Herald (Honours in 2025 - 2026), Co-Supervised
-        with <a href="https://comp.anu.edu.au/people/alwen-tiu/">Alwen
-          Tiu</a>, Security of Capabilities in CHERI</li>
-      <li>Jack Hackshaw (Honours in 2025 - 2026), Pancacke in Loom in	Lean</li>
-      <li>Billy Jaffray (Honours in 2026), Verificaiton in Rust using	Loom</li>
-      <li>Rishita Sarkar (BAC R\&D ASC), Co-Supervised with
-         <a href="https://faculty.sites.iastate.edu/liyili2/">Liyi Li</a>,
-         Quantum Computing Testing</li>
-      <li>Libby Boas (PhB ASC), Co-Supervised with
-         <a href="https://faculty.sites.iastate.edu/liyili2/">Liyi Li</a>,
-         Quantum Computing Distributed Computation</li>
-      <li>CHarlotte Fulham (Engineering ASC), Co-Supervised with Yan Liu,
-         Fiducia to Microkit Bridge Implementation</li>
-      <li>Fahimeh Hoseinnia (PhD 2023 - 2026 at VUW), Co-Supervised
-        with <a href="https://people.wgtn.ac.nz/jennifer.ferreira">Jennifer
-          Ferreira</a> at VUW
-        and <a href="https://people.wgtn.ac.nz/James.Quilty">James
-          Quilty</a> at VUW, Agricultural Pollution Data Marketplace and
-        DAOs</li>
-      <li>Feifei Cheng (PhD at Iowa State University 2025 - 2029),
-        Co-Supervised with <a href="https://faculty.sites.iastate.edu/liyili2/">Liyi Li</a>,
-        Quantum Computing Symbolic Execution</li>
-      <li>Maximillian Kodetzki (PhD 2022 - 2026 at KIT), Co-Supervised
-        with Ina Schaefer</li>
-      <li>Jakob Jerebica (PhD 2026 - 2030 at KIT), Co-Supervised
-        with Ina Schaefer and Michael Norrish</li>
-    </ol>
-
-    <p>Completed:</p>
-    
-    <ol start="18">
-      <li>Ari Gilchrist (ASC), Qiskit to QGen Translation</li>
-      <li>Iko-Ojo Simon (PhD 2023 - 2025), Co-Supervised
-        with <a href="https://comp.anu.edu.au/people/hanna-suominen/">Hanna
-          Suominen</a>
-        and <a href="https://comp.anu.edu.au/people/chirath-hettiarachchi/">Chirath
-          Hettiarachchi</a>
-        and <a href="https://cmps.ok.ubc.ca/about/contact/fatemeh-hendijani-fard/">Fatemeh
-          H. Fard</a> at UBC, Algorithmic Debt</li>
-      <li>Jakob Jerebica (Masters 2024 - 2025 at KIT), Co-Supervised
-        with Ina Schaefer and Michael Norrish</li>
-      <li>Matt Britton (Honours in 2024 - 2025), Rust Refactoring</li>
-      <li>Dariy Guzairov (Honours in 2025), Co-Supervised with Alwen
-	Tiu, CHERI Exploits</li>
-      <li>Nicholas Arvanitellis (ASC Project in 2025), Co-Supervised
-	with Alwen Tiu, Obfuscation Exploits</li>
-      <li>Lachlan Graham (Honours in 2024), Co-Supervised
-        with <a href="https://comp.anu.edu.au/people/alwen-tiu/">Alwen
-          Tiu</a>, Capabilities from High Level to Hardware</li>
-      <li>Zack Noyes (Honours in 2024), Co-Supervised
-        with <a href="https://comp.anu.edu.au/people/alwen-tiu/">Alwen
-          Tiu</a>, Information Flow</li>
-      <li>Ziling Ouyang (Honours in 2024), Co-Supervised
-	with <a href="https://comp.anu.edu.au/people/fabian-muehlboeck/">Fabian
-	  Mühlböck</a>, Using Redex for Safe Programming Languages
-	Research: A Case Study in System C</li>
-      <li>Matthew Gates (BAC RnD Project in 2024 S2), Coq
-        Formalisation of Tagged Objects</li>
-      <li>Amos Robinson (Postdoc 2023 - 2025 at ANU), Higher Level
-        Invariants with Lark</li>
-      <li>Guanming Ou (Honours at ANU in 2023), Co-Supervised
-        with <a href="https://comp.anu.edu.au/people/fabian-muehlboeck/">Fabian
-          Mühlböck</a>
-        and <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan
-          Aldrich</a> at CMU, Abstract and Algebraic Effects in Wyvern
-        (Theory)</li>
-      <li>Ziling Ouyang (Third Year Project at ANU in 2023),
-        Co-Supervised
-        with <a href="https://comp.anu.edu.au/people/fabian-muehlboeck/">Fabian
-        Mühlböck</a>
-        and <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan
-        Aldrich</a> at CMU, Abstract and Algebraic Effects in Wyvern
-        (Implementation)</li>
-      <li>Richard Susilo (Honours at ANU in 2023), Co-Supervised
-        with <a href="https://comp.anu.edu.au/people/fabian-muehlboeck/">Fabian
-          Mühlböck</a>, IDE-Driven Partial Semantics for Wyvern</li>
-      <li>Jaxon Kneipp (Honours at ANU in 2023), Co-Supervised
-        with <a href="https://earthsciences.anu.edu.au/people/academics/dr-michael-anenburg">Michael
-          Anenburg</a>, Visualisation App for REM Discovery</li>
-      <li>Aniket Shaha (RA via FRT 2023), Classification of CVE's to
-        Identify the Use for Capability-Enabled Modules in Language
-        Security</li>
-      <li>Abhaas Goyal (Honours at ANU in 2022 - 2023), Co-Supervised
-        with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan
-          Aldrich</a> at CMU, Usability Study of Capable vs Incapable
-        Modules</li>
-      <li>Naisheng Liang (Honours at ANU in 2023), Breaking or Security
-        of IntelliJ Plugins via Language Security Techniques</li>
-      <li>Xinyi (Kayla) Li (RA via Google 2023), Co-Supervised
-        with <a href="https://researchers.mq.edu.au/en/persons/matthew-roberts">Matthew
-          Roberts</a> at Macquire University, Survey of FM Curriculum in
-        Australasia</li>
-      <li>Tobias Runge (PhD Thesis in 2019 - 2022 (based at KIT and
-        formerly at TU Braunschweig), CbC with Ownership and Traits,
-        Co-Supervised with Ina Schaefer and Marco Servetto</li>
-      <li>Leon Bowie (RA in 2021, 2022), AgriDataTrade
-        Marketplace with N Leaching Sensor Network for NZ Farms</li>
-      <li>Sophia Roshal (RA in 2021 and 2022 (based at CMU and
-        Cornell)), Decidable Nominal Subtyping in Wyvern,
-        Co-Supervised with Jonathan Aldrich</li>
-      <li>Richard Susilo (Undergraduate Research Project in 2022 at
-        ANU)</li>
-      <li>Nik Bielski (PhD Thesis attempted in 2022 - 2023 (part time,
-        suspended in 2023)), Co-Supervised
-        with <a href="https://people.wgtn.ac.nz/bastiaan.kleijn">Bastiaan
-        Kleijn</a> at VUW
-        and <a href="https://www.canterbury.ac.nz/engineering/contact-us/people/thomas-li.html">Heyang
-        (Thomas) Li</a> at UC</li>
-      <li>Manish Singh (PhD Thesis attempted in 2017 - 2022 (part
-        time, suspended in 2021)), Lock Free Balanced BST's,
-        Co-Supervised
-        with <a href="https://ecs.wgtn.ac.nz/Main/LindsayGroves">Lindsay
-        Groves</a></li>
-      <li>Rowan Rathod (ENGR489 attempted in 2021), Automated Farm Sensing on a
-        Robonomics Platform</li>
-      <li>Samantha Hau (ENGR489 in 2021), WFA Events App</li>
-      <li>Dominic Tjiptono (ENGR489 in 2021), Haskell in the Real World,
-        Co-Supervised
-        with <a href="https://people.wgtn.ac.nz/james.noble">James
-          Noble</a></li>
-      <li>Maxwell Clarke (2020/2021 Summer RA based at VUW), Wyvern
-        Effects and FFI</li>
-      <li>Timothy Mou (2020 Summer RA based at CMU), Wyvern Decidable
-        Nominal Type Member Subtyping Implementation, Co-Supervised
-        with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
-          (CMU)</a></li>
-      <li>Anlun Xu (Masters at CMU in 2020), Bounded Abstract Effects,
-        Co-Supervised
-        with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
-          (CMU)</a></li>
-      <li>Carl Bennett (ENGR489 in 2019), A Study In Mobile App and Web
-        Frameworks</li>
-      <li>Cameron Laing (ENGR489 in 2019), Reproducing an Existing
-        Empirical PL or SE Study</li>
-      <li>Billy Zhu (Masters at CMU in 2018/2019), Nominal Type Members, Co-Supervised
-        with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
-          (CMU)</a></li>
-      <li>Henry Nelson (2018 Summer RA based at CMU), Wyvern JavaScript
-        Backend and Bytecode, Co-Supervised
-        with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
-          (CMU)</a></li>
-      <li>Justin Lubin (2018 Summer RA based at CMU), Wyvern Effects,
-        Co-Supervised
-        with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
-          (CMU)</a></li>
-      <li>Andre Westerlund (ENGR489 in 2018), Wyvern Secure Web
-        Server, Co-Supervised with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
-          (CMU)</a></li>
-      <li>Tu Dinh (ENGR489 in 2018), Wyvern REPL, Co-Supervised
-        with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
-          (CMU)</a></li>
-      <li>Zacary Paynter (ENGR489 in 2018, Co-Supervised with Lindsay
-        Groves), Non Blocking Priority Queues Review and Performance
-        Comparison</li>
-      <li>Miten Chauhan (ENGR489 in 2017), Industrial Project with PlanIT</li>
-      <li>Neel Patel (ENGR489 in 2017), Industrial Project with
-        PlanIT</li>
-      <li>Callum Gil (ENGR489 in 2017), Industrial Project with Haunt</li>
-      <li>Baptiste Pauget (RA in February - July 2017, Whiley to FPGA,
-        Co-Supervised with David Pearce)</li>
-      <li>Aaron Craig (COMP489 2016/2017, Effects and Capabilities in
-        Wyvern, Co-Supervised with Jonathan Aldrich from CMU and Lindsay
-        Groves)</li>
-      <li>Robbie McKinstry (RA based at CMU in 2016, Wyvern
-        Implementation, Co-Supervised with Jonathan Aldrich from CMU)</li>
-      <li>Luke Inkster (ENGR489 in 2016, Inheritance vs Delegation Study,
-        Co-Supervised with James Noble)</li>
-      <li>Daniel Campbell (COMP489 in 2016, Macros in Rust, Co-Supervised
-        with Nick Cameron from Mozilla Corporation)</li>
-      <li>Aaron Craig (Summer RA in 2015/2016, Verification Support for
-        Wyvern, Co-Supervised with Jonathan Aldrich from CMU and Lindsay
-        Groves)</li>
-      <li>Daniel Campbell (Summer RA in 2015/2016, Tool Support for Macros
-        in Rust, Co-Supervised with Nick Cameron from Mozilla
-        Corporation)</li>
-      <li>Garming Sam (BE Honours in 2015, Refactorings in Rust,
-        Co-Supervised with Nick Cameron from Mozilla Corporation)</li>
-      <li>Jui Deshpande (BE Honours in 2015, Automatic Data Quality
-        Analysis Tool for Airways NZ), Co-Supervised
-        with <a href="http://www.victoria.ac.nz/ecs/staff/hui-ma.aspx">Hui
-          Ma</a></li>
-      <li>Mate Antunovic (BE Honours attempted in 2015, RR, Co-Supervised with
-        Robert O'Callahan from Mozilla Corporation)</li>
-      <li>Julian Mackay (PhD Thesis in 2015 - 2019, Wyvern Type Members),
-        Co-Supervised
-        with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
-          (CMU)</a>
-        and <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
-          Groves</a></li>
-      <li>Darya Melicher (PhD Thesis in 2013 - 2019, Wyvern Modules, CMU),
-        Primary Supervisor
-        is <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
-          (CMU)</a></li>
-      <li>Troy Shaw (BE Honours Thesis in 2014, Tagged Types
-        Implementation for Wyvern)</li>
-      <li>Tim Sullivan (BSc Honours Thesis in 2014, Interpreter for
-        Grace), Co-Supervised
-        with <a href="http://www.victoria.ac.nz/ecs/staff/james-noble.aspx">James
-          Noble</a></li>
-      <li>Ahmed Khalifa (PhD Thesis from 2010 to 2013, Ownership and Immutability in the Real World), Co-Supervised
-        with <a href="http://www.victoria.ac.nz/ecs/staff/james-noble.aspx">James
-          Noble</a></li>
-      <li>Morgan Atkins (MSc Thesis in 2012, Survey of Concurrency
-        Features in OO Programming Languages), Co-Supervised
-        with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
-          Groves</a></li>
-      <li>Julian Mackay (MSc Thesis in 2012, Mechanised Theorem Proving in
-        COQ for Ownership and Immutability), Co-Supervised
-        with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
-          Groves</a></li>
-      <li>Morgan Atkins (RA in summer 2010/2011, X10 Programming Language
-        and Clocked References)</li>
-      <li>Morgan Atkins (BSc Honours Thesis in 2011, X10 Programming
-        Language)</li>
-      <li>Julian Mackay (BSc Honours Thesis in 2011, Mechanised Theorem
-        Proving in COQ), Co-Supervised
-        with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
-          Groves</a></li>
-      <li>Felix Shi (BE 400-level Thesis in 2011, JavaScript Type
-        Inference), Co-Supervised
-        with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
-          Groves</a></li>
-      <li>Jan Larres (MSc Thesis in 2011, Performance Variations
-        Analysis in Mozilla Firefox), Co-Supervised
-        with <a href="http://www.victoria.ac.nz/smsor/staff/yuichi-hirose.aspx">Yuichi
-          Hirose</a></li>
-      <li>Constantine Dymnikov (MSc Thesis in 2011, Modular
-        Ownership Inference), Co-Supervised
-        with <a href="http://www.victoria.ac.nz/ecs/staff/david-pearce.aspx">David
-          Pearce</a></li>
-      <li>Hien Tran (BE 400-level Thesis in 2010, Automated Analysis of
-        Map Labelling for GIS Users), Co-Supervised
-        with <a href="http://www.victoria.ac.nz/sgees/staff/mairead-deroiste.aspx">Mairead
-          de Roiste</a> from SGEES</li>
-      <li>Hannes Mehnert (RA in summer 2009/2010, Ownership and
-        Immutability, Co-Supervised
-        with <a href="http://www.victoria.ac.nz/ecs/staff/nicholas-cameron.aspx">Nicholas
-          Cameron</a>)</li>
-      <li>Constantine Dymnikov (RA in 2009/2010, Ownership Inference)</li>
-      <li>Andrew Walbran (RA in 2009, OIGJ Compiler)</li>
-      <li>Gustav van der Merwe (RA in 2009, Ownership, Immutability and
-        GADT's)</li>
-      <li>Paley Li (BSc Honours Thesis in 2008, Ownership and
-        Immutability), Co-Supervised
-        with <a href="http://www.victoria.ac.nz/ecs/staff/james-noble.aspx">James
-          Noble</a>
-        and <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
-          Groves</a></li>
-      <li>Andrew Childs (BSc Honours Thesis in 2008, Eliminating Redundant
-        Null Checks), Co-Supervised
-        with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
-          Groves</a></li>
-      <li>Paley Li (RA in 2008, Ownership and Immutability)</li>
-      <li>Radu Muschevici (MSc Thesis in 2007/2008, Multimethods),
-        Co-Supervised
-        with <a href="http://www.victoria.ac.nz/ecs/staff/james-noble.aspx">James
-          Noble</a></li>
-      <li>Neil Ramsay (BIT Thesis in 2007, Software Visualisation),
-        Co-Supervised
-        with <a href="http://www.victoria.ac.nz/ecs/staff/stuart-marshall.aspx">Stuart
-          Marshall</a></li>
-      <li>Leo Gui (BIT Thesis attempted in 2007, Usability of Teaching
-        Tools), Co-Supervised
-        with <a href="http://www.victoria.ac.nz/ecs/staff/stuart-marshall.aspx">Stuart
-          Marshall</a></li>
-      <li>Christo Fogelberg (RA in 2007, Ownership in Collections)</li>
-    </ol>
-    
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-      <!--
-          <div class="w3-xlarge w3-section">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <div class="card-grid-2">
+          <div class="card student-card">
+            <div class="student-name">Yan Liu</div>
+            <div class="student-topic">Research Fellow (Postdoc)</div>
+            <div class="student-meta">ANU, 2025 - 2027</div>
           </div>
-          -->
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+
+          <div class="card student-card">
+            <div class="student-name">Sasha Pak</div>
+            <div class="student-topic">Rust Made Easier</div>
+            <div class="student-meta">PhD 2024 - 2027 | Co-supervised with <a href="https://ilyasergey.net/">Ilya Sergey</a> (NUS), <a href="https://fabian.muehlboeck.name/#about">Fabian Muehlboeck</a></div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Edwin Singh</div>
+            <div class="student-topic">Why Language Designers Do Modules The Way They Do (Grounded Theory Study)</div>
+            <div class="student-meta">PhD 2022 - 2028 (part time) | Co-supervised with <a href="https://people.wgtn.ac.nz/jennifer.ferreira">Jennifer Ferreira</a> (VUW), <a href="https://comp.anu.edu.au/people/alwen-tiu/">Alwen Tiu</a></div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Abolfazl Sharifi</div>
+            <div class="student-topic">Topic TBC</div>
+            <div class="student-meta">PhD 2026 - 2030 | Co-supervisor TBC</div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Zara Hassan</div>
+            <div class="student-topic">Reproducibility Debt in Scientific Software</div>
+            <div class="student-meta">PhD 2023 - 2025 | Co-supervised with <a href="https://ctreude.ca/">Christoph Treude</a> (SMU), <a href="https://cecc.anu.edu.au/people/michael-norrish">Michael Norrish</a>, <a href="https://cecc.anu.edu.au/people/graham-williams">Graham Williams</a></div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Haoyu Wu</div>
+            <div class="student-topic">Nomnom Type Checking</div>
+            <div class="student-meta">PhD 2025 - 2028 | Co-supervised with <a href="https://fabian.muehlboeck.name/#about">Fabian Muehlboeck</a></div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Carlo Zancanaro</div>
+            <div class="student-topic">Gradual Typing and Type Polymorphism</div>
+            <div class="student-meta">PhD 2026 - 2029 | Co-supervised with <a href="https://fabian.muehlboeck.name/#about">Fabian Muehlboeck</a></div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Alyssa Herald</div>
+            <div class="student-topic">Security of Capabilities in CHERI</div>
+            <div class="student-meta">Honours 2025 - 2026 | Co-supervised with <a href="https://comp.anu.edu.au/people/alwen-tiu/">Alwen Tiu</a></div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Jack Hackshaw</div>
+            <div class="student-topic">Pancake in Loom in Lean</div>
+            <div class="student-meta">Honours 2025 - 2026</div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Billy Jaffray</div>
+            <div class="student-topic">Verification in Rust using Loom</div>
+            <div class="student-meta">Honours 2026</div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Rishita Sarkar</div>
+            <div class="student-topic">Quantum Computing Testing</div>
+            <div class="student-meta">BAC R&amp;D ASC | Co-supervised with <a href="https://faculty.sites.iastate.edu/liyili2/">Liyi Li</a></div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Libby Boas</div>
+            <div class="student-topic">Quantum Computing Distributed Computation</div>
+            <div class="student-meta">PhB ASC | Co-supervised with <a href="https://faculty.sites.iastate.edu/liyili2/">Liyi Li</a></div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Charlotte Fulham</div>
+            <div class="student-topic">Fiducia to Microkit Bridge Implementation</div>
+            <div class="student-meta">Engineering ASC | Co-supervised with Yan Liu</div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Fahimeh Hoseinnia</div>
+            <div class="student-topic">Agricultural Pollution Data Marketplace and DAOs</div>
+            <div class="student-meta">PhD 2023 - 2026 (VUW) | Co-supervised with <a href="https://people.wgtn.ac.nz/jennifer.ferreira">Jennifer Ferreira</a>, <a href="https://people.wgtn.ac.nz/James.Quilty">James Quilty</a></div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Feifei Cheng</div>
+            <div class="student-topic">Quantum Computing Symbolic Execution</div>
+            <div class="student-meta">PhD 2025 - 2029 (Iowa State) | Co-supervised with <a href="https://faculty.sites.iastate.edu/liyili2/">Liyi Li</a></div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Maximillian Kodetzki</div>
+            <div class="student-topic">X-by-Construction</div>
+            <div class="student-meta">PhD 2022 - 2026 (KIT) | Co-supervised with Ina Schaefer</div>
+          </div>
+
+          <div class="card student-card">
+            <div class="student-name">Jakob Jerebica</div>
+            <div class="student-topic">Topic TBC</div>
+            <div class="student-meta">PhD 2026 - 2030 (KIT) | Co-supervised with Ina Schaefer, Michael Norrish</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Completed Students -->
+    <div class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Completed Students</h2>
+
+        <ol class="styled-list" start="18">
+          <li>Ari Gilchrist (ASC), Qiskit to QGen Translation</li>
+          <li>Iko-Ojo Simon (PhD 2023 - 2025), Co-Supervised
+            with <a href="https://comp.anu.edu.au/people/hanna-suominen/">Hanna
+              Suominen</a>,
+            <a href="https://comp.anu.edu.au/people/chirath-hettiarachchi/">Chirath
+              Hettiarachchi</a>,
+            and <a href="https://cmps.ok.ubc.ca/about/contact/fatemeh-hendijani-fard/">Fatemeh
+              H. Fard</a> at UBC, Algorithmic Debt</li>
+          <li>Jakob Jerebica (Masters 2024 - 2025 at KIT), Co-Supervised
+            with Ina Schaefer and Michael Norrish</li>
+          <li>Matt Britton (Honours in 2024 - 2025), Rust Refactoring</li>
+          <li>Dariy Guzairov (Honours in 2025), Co-Supervised with Alwen
+	        Tiu, CHERI Exploits</li>
+          <li>Nicholas Arvanitellis (ASC Project in 2025), Co-Supervised
+	        with Alwen Tiu, Obfuscation Exploits</li>
+          <li>Lachlan Graham (Honours in 2024), Co-Supervised
+            with <a href="https://comp.anu.edu.au/people/alwen-tiu/">Alwen
+              Tiu</a>, Capabilities from High Level to Hardware</li>
+          <li>Zack Noyes (Honours in 2024), Co-Supervised
+            with <a href="https://comp.anu.edu.au/people/alwen-tiu/">Alwen
+              Tiu</a>, Information Flow</li>
+          <li>Ziling Ouyang (Honours in 2024), Co-Supervised
+	        with <a href="https://comp.anu.edu.au/people/fabian-muehlboeck/">Fabian
+	          M&uuml;hlb&ouml;ck</a>, Using Redex for Safe Programming Languages
+	        Research: A Case Study in System C</li>
+          <li>Matthew Gates (BAC RnD Project in 2024 S2), Coq
+            Formalisation of Tagged Objects</li>
+          <li>Amos Robinson (Postdoc 2023 - 2025 at ANU), Higher Level
+            Invariants with Lark</li>
+          <li>Guanming Ou (Honours at ANU in 2023), Co-Supervised
+            with <a href="https://comp.anu.edu.au/people/fabian-muehlboeck/">Fabian
+              M&uuml;hlb&ouml;ck</a>
+            and <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan
+              Aldrich</a> at CMU, Abstract and Algebraic Effects in Wyvern
+            (Theory)</li>
+          <li>Ziling Ouyang (Third Year Project at ANU in 2023),
+            Co-Supervised
+            with <a href="https://comp.anu.edu.au/people/fabian-muehlboeck/">Fabian
+            M&uuml;hlb&ouml;ck</a>
+            and <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan
+            Aldrich</a> at CMU, Abstract and Algebraic Effects in Wyvern
+            (Implementation)</li>
+          <li>Richard Susilo (Honours at ANU in 2023), Co-Supervised
+            with <a href="https://comp.anu.edu.au/people/fabian-muehlboeck/">Fabian
+              M&uuml;hlb&ouml;ck</a>, IDE-Driven Partial Semantics for Wyvern</li>
+          <li>Jaxon Kneipp (Honours at ANU in 2023), Co-Supervised
+            with <a href="https://earthsciences.anu.edu.au/people/academics/dr-michael-anenburg">Michael
+              Anenburg</a>, Visualisation App for REM Discovery</li>
+          <li>Aniket Shaha (RA via FRT 2023), Classification of CVE's to
+            Identify the Use for Capability-Enabled Modules in Language
+            Security</li>
+          <li>Abhaas Goyal (Honours at ANU in 2022 - 2023), Co-Supervised
+            with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan
+              Aldrich</a> at CMU, Usability Study of Capable vs Incapable
+            Modules</li>
+          <li>Naisheng Liang (Honours at ANU in 2023), Breaking or Security
+            of IntelliJ Plugins via Language Security Techniques</li>
+          <li>Xinyi (Kayla) Li (RA via Google 2023), Co-Supervised
+            with <a href="https://researchers.mq.edu.au/en/persons/matthew-roberts">Matthew
+              Roberts</a> at Macquire University, Survey of FM Curriculum in
+            Australasia</li>
+          <li>Tobias Runge (PhD Thesis in 2019 - 2022 (based at KIT and
+            formerly at TU Braunschweig), CbC with Ownership and Traits,
+            Co-Supervised with Ina Schaefer and Marco Servetto</li>
+          <li>Leon Bowie (RA in 2021, 2022), AgriDataTrade
+            Marketplace with N Leaching Sensor Network for NZ Farms</li>
+          <li>Sophia Roshal (RA in 2021 and 2022 (based at CMU and
+            Cornell)), Decidable Nominal Subtyping in Wyvern,
+            Co-Supervised with Jonathan Aldrich</li>
+          <li>Richard Susilo (Undergraduate Research Project in 2022 at
+            ANU)</li>
+          <li>Nik Bielski (PhD Thesis attempted in 2022 - 2023 (part time,
+            suspended in 2023)), Co-Supervised
+            with <a href="https://people.wgtn.ac.nz/bastiaan.kleijn">Bastiaan
+            Kleijn</a> at VUW
+            and <a href="https://www.canterbury.ac.nz/engineering/contact-us/people/thomas-li.html">Heyang
+            (Thomas) Li</a> at UC</li>
+          <li>Manish Singh (PhD Thesis attempted in 2017 - 2022 (part
+            time, suspended in 2021)), Lock Free Balanced BST's,
+            Co-Supervised
+            with <a href="https://ecs.wgtn.ac.nz/Main/LindsayGroves">Lindsay
+            Groves</a></li>
+          <li>Rowan Rathod (ENGR489 attempted in 2021), Automated Farm Sensing on a
+            Robonomics Platform</li>
+          <li>Samantha Hau (ENGR489 in 2021), WFA Events App</li>
+          <li>Dominic Tjiptono (ENGR489 in 2021), Haskell in the Real World,
+            Co-Supervised
+            with <a href="https://people.wgtn.ac.nz/james.noble">James
+              Noble</a></li>
+          <li>Maxwell Clarke (2020/2021 Summer RA based at VUW), Wyvern
+            Effects and FFI</li>
+          <li>Timothy Mou (2020 Summer RA based at CMU), Wyvern Decidable
+            Nominal Type Member Subtyping Implementation, Co-Supervised
+            with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+              (CMU)</a></li>
+          <li>Anlun Xu (Masters at CMU in 2020), Bounded Abstract Effects,
+            Co-Supervised
+            with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+              (CMU)</a></li>
+          <li>Carl Bennett (ENGR489 in 2019), A Study In Mobile App and Web
+            Frameworks</li>
+          <li>Cameron Laing (ENGR489 in 2019), Reproducing an Existing
+            Empirical PL or SE Study</li>
+          <li>Billy Zhu (Masters at CMU in 2018/2019), Nominal Type Members, Co-Supervised
+            with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+              (CMU)</a></li>
+          <li>Henry Nelson (2018 Summer RA based at CMU), Wyvern JavaScript
+            Backend and Bytecode, Co-Supervised
+            with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+              (CMU)</a></li>
+          <li>Justin Lubin (2018 Summer RA based at CMU), Wyvern Effects,
+            Co-Supervised
+            with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+              (CMU)</a></li>
+          <li>Andre Westerlund (ENGR489 in 2018), Wyvern Secure Web
+            Server, Co-Supervised with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+              (CMU)</a></li>
+          <li>Tu Dinh (ENGR489 in 2018), Wyvern REPL, Co-Supervised
+            with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+              (CMU)</a></li>
+          <li>Zacary Paynter (ENGR489 in 2018, Co-Supervised with Lindsay
+            Groves), Non Blocking Priority Queues Review and Performance
+            Comparison</li>
+          <li>Miten Chauhan (ENGR489 in 2017), Industrial Project with PlanIT</li>
+          <li>Neel Patel (ENGR489 in 2017), Industrial Project with
+            PlanIT</li>
+          <li>Callum Gil (ENGR489 in 2017), Industrial Project with Haunt</li>
+          <li>Baptiste Pauget (RA in February - July 2017, Whiley to FPGA,
+            Co-Supervised with David Pearce)</li>
+          <li>Aaron Craig (COMP489 2016/2017, Effects and Capabilities in
+            Wyvern, Co-Supervised with Jonathan Aldrich from CMU and Lindsay
+            Groves)</li>
+          <li>Robbie McKinstry (RA based at CMU in 2016, Wyvern
+            Implementation, Co-Supervised with Jonathan Aldrich from CMU)</li>
+          <li>Luke Inkster (ENGR489 in 2016, Inheritance vs Delegation Study,
+            Co-Supervised with James Noble)</li>
+          <li>Daniel Campbell (COMP489 in 2016, Macros in Rust, Co-Supervised
+            with Nick Cameron from Mozilla Corporation)</li>
+          <li>Aaron Craig (Summer RA in 2015/2016, Verification Support for
+            Wyvern, Co-Supervised with Jonathan Aldrich from CMU and Lindsay
+            Groves)</li>
+          <li>Daniel Campbell (Summer RA in 2015/2016, Tool Support for Macros
+            in Rust, Co-Supervised with Nick Cameron from Mozilla
+            Corporation)</li>
+          <li>Garming Sam (BE Honours in 2015, Refactorings in Rust,
+            Co-Supervised with Nick Cameron from Mozilla Corporation)</li>
+          <li>Jui Deshpande (BE Honours in 2015, Automatic Data Quality
+            Analysis Tool for Airways NZ), Co-Supervised
+            with <a href="http://www.victoria.ac.nz/ecs/staff/hui-ma.aspx">Hui
+              Ma</a></li>
+          <li>Mate Antunovic (BE Honours attempted in 2015, RR, Co-Supervised with
+            Robert O'Callahan from Mozilla Corporation)</li>
+          <li>Julian Mackay (PhD Thesis in 2015 - 2019, Wyvern Type Members),
+            Co-Supervised
+            with <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+              (CMU)</a>
+            and <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
+              Groves</a></li>
+          <li>Darya Melicher (PhD Thesis in 2013 - 2019, Wyvern Modules, CMU),
+            Primary Supervisor
+            is <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich
+              (CMU)</a></li>
+          <li>Troy Shaw (BE Honours Thesis in 2014, Tagged Types
+            Implementation for Wyvern)</li>
+          <li>Tim Sullivan (BSc Honours Thesis in 2014, Interpreter for
+            Grace), Co-Supervised
+            with <a href="http://www.victoria.ac.nz/ecs/staff/james-noble.aspx">James
+              Noble</a></li>
+          <li>Ahmed Khalifa (PhD Thesis from 2010 to 2013, Ownership and Immutability in the Real World), Co-Supervised
+            with <a href="http://www.victoria.ac.nz/ecs/staff/james-noble.aspx">James
+              Noble</a></li>
+          <li>Morgan Atkins (MSc Thesis in 2012, Survey of Concurrency
+            Features in OO Programming Languages), Co-Supervised
+            with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
+              Groves</a></li>
+          <li>Julian Mackay (MSc Thesis in 2012, Mechanised Theorem Proving in
+            COQ for Ownership and Immutability), Co-Supervised
+            with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
+              Groves</a></li>
+          <li>Morgan Atkins (RA in summer 2010/2011, X10 Programming Language
+            and Clocked References)</li>
+          <li>Morgan Atkins (BSc Honours Thesis in 2011, X10 Programming
+            Language)</li>
+          <li>Julian Mackay (BSc Honours Thesis in 2011, Mechanised Theorem
+            Proving in COQ), Co-Supervised
+            with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
+              Groves</a></li>
+          <li>Felix Shi (BE 400-level Thesis in 2011, JavaScript Type
+            Inference), Co-Supervised
+            with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
+              Groves</a></li>
+          <li>Jan Larres (MSc Thesis in 2011, Performance Variations
+            Analysis in Mozilla Firefox), Co-Supervised
+            with <a href="http://www.victoria.ac.nz/smsor/staff/yuichi-hirose.aspx">Yuichi
+              Hirose</a></li>
+          <li>Constantine Dymnikov (MSc Thesis in 2011, Modular
+            Ownership Inference), Co-Supervised
+            with <a href="http://www.victoria.ac.nz/ecs/staff/david-pearce.aspx">David
+              Pearce</a></li>
+          <li>Hien Tran (BE 400-level Thesis in 2010, Automated Analysis of
+            Map Labelling for GIS Users), Co-Supervised
+            with <a href="http://www.victoria.ac.nz/sgees/staff/mairead-deroiste.aspx">Mairead
+              de Roiste</a> from SGEES</li>
+          <li>Hannes Mehnert (RA in summer 2009/2010, Ownership and
+            Immutability, Co-Supervised
+            with <a href="http://www.victoria.ac.nz/ecs/staff/nicholas-cameron.aspx">Nicholas
+              Cameron</a>)</li>
+          <li>Constantine Dymnikov (RA in 2009/2010, Ownership Inference)</li>
+          <li>Andrew Walbran (RA in 2009, OIGJ Compiler)</li>
+          <li>Gustav van der Merwe (RA in 2009, Ownership, Immutability and
+            GADT's)</li>
+          <li>Paley Li (BSc Honours Thesis in 2008, Ownership and
+            Immutability), Co-Supervised
+            with <a href="http://www.victoria.ac.nz/ecs/staff/james-noble.aspx">James
+              Noble</a>
+            and <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
+              Groves</a></li>
+          <li>Andrew Childs (BSc Honours Thesis in 2008, Eliminating Redundant
+            Null Checks), Co-Supervised
+            with <a href="http://www.victoria.ac.nz/ecs/staff/lindsay-groves.aspx">Lindsay
+              Groves</a></li>
+          <li>Paley Li (RA in 2008, Ownership and Immutability)</li>
+          <li>Radu Muschevici (MSc Thesis in 2007/2008, Multimethods),
+            Co-Supervised
+            with <a href="http://www.victoria.ac.nz/ecs/staff/james-noble.aspx">James
+              Noble</a></li>
+          <li>Neil Ramsay (BIT Thesis in 2007, Software Visualisation),
+            Co-Supervised
+            with <a href="http://www.victoria.ac.nz/ecs/staff/stuart-marshall.aspx">Stuart
+              Marshall</a></li>
+          <li>Leo Gui (BIT Thesis attempted in 2007, Usability of Teaching
+            Tools), Co-Supervised
+            with <a href="http://www.victoria.ac.nz/ecs/staff/stuart-marshall.aspx">Stuart
+              Marshall</a></li>
+          <li>Christo Fogelberg (RA in 2007, Ownership in Collections)</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-links">
+          <a href="./">Home</a>
+          <a href="./publications.html">Publications</a>
+          <a href="./teaching.html">Teaching</a>
+          <a href="./committees.html">Service</a>
+        </div>
+        <p>Alex Potanin &middot; School of Computing, Australian National University</p>
+      </div>
     </footer>
-    
+
     <script>
-      // Modal Image Gallery
-      function onClick(element) {
-          document.getElementById("img01").src = element.src;
-          document.getElementById("modal01").style.display = "block";
-          var captionText = document.getElementById("caption");
-          captionText.innerHTML = element.alt;
-      }
-      
-      // Change style of navbar on scroll
       window.onscroll = function() {myFunction()};
       function myFunction() {
-          var navbar = document.getElementById("myNavbar");
-          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-              navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-          } else {
-              navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-          }
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
       }
-      
-      // Used to toggle the menu on small screens when clicking on the menu button
+
       function toggleFunction() {
-          var x = document.getElementById("navDemo");
-          if (x.className.indexOf("w3-show") == -1) {
-              x.className += " w3-show";
-          } else {
-              x.className = x.className.replace(" w3-show", "");
-          }
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
       }
     </script>
 

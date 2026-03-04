@@ -1,255 +1,153 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Courses Taught by Alex Potanin</title>
+    <title>Teaching - Alex Potanin</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-      body, html {
-          height: 100%;
-          /* color: #777; */
-          line-height: 1.8;
-      }
-
-      .w3-wide {letter-spacing: 10px;}
-      .w3-hover-opacity {cursor: pointer;}
-
-      .filler {
-          display: flex;
-          flex-direction: column;
-          width: 300px;
-          heigth: 100%;
-      }
-
-      .first {
-          height: 50px;
-      }
-
-      .second {
-          flex-grow: 1;
-      }
-      
-      /* Turn off parallax scrolling for tablets and phones */
-      @media only screen and (max-device-width: 1600px) {
-          .bgimg-1, .bgimg-2, .bgimg-3 {
-              background-attachment: scroll;
-              min-height: 400px;
-          }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    
-    <!-- Navbar (sit on top) -->
+
+    <!-- Navbar -->
     <div class="w3-top">
       <div class="w3-bar" id="myNavbar">
-        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right"
            href="javascript:void(0);"
            onclick="toggleFunction()"
            title="Toggle Navigation Menu">
           <i class="fa fa-bars"></i>
         </a>
-        <a href="https://potanin.github.io/" class="w3-bar-item w3-button">HOME</a>
-        <a href="./students.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> STUDENTS</a>
-        <a href="./teaching.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-graduation-cap"></i> TEACHING</a>
-        <a href="./committees.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> COMMITTEES</a>
-        <a href="./files/cv-alex-potanin.pdf" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> CV</a>
+        <a href="./" class="w3-bar-item w3-button">HOME</a>
+        <a href="./students.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> STUDENTS</a>
+        <a href="./publications.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file-text-o"></i> PUBLICATIONS</a>
+        <a href="./teaching.html" class="w3-bar-item w3-button w3-hide-small nav-active"><i class="fa fa-graduation-cap"></i> TEACHING</a>
+        <a href="./committees.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-institution"></i> SERVICE</a>
         <a href="mailto:alex.potanin@anu.edu.au" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> EMAIL</a>
-        <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-             <i class="fa fa-search"></i>
-        </a> -->
       </div>
-
-      <!-- Navbar on small screens -->
-      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
         <a href="./students.html" class="w3-bar-item w3-button" onclick="toggleFunction()">STUDENTS</a>
+        <a href="./publications.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PUBLICATIONS</a>
         <a href="./teaching.html" class="w3-bar-item w3-button" onclick="toggleFunction()">TEACHING</a>
-        <a href="./committees.html" class="w3-bar-item w3-button" onclick="toggleFunction()">COMMITTEES</a>
-        <a href="./files/cv-alex-potanin.pdf" class="w3-bar-item w3-button" onclick="toggleFunction()">CV</a>
+        <a href="./committees.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVICE</a>
         <a href="mailto:alex.potanin@anu.edu.au" class="w3-bar-item w3-button" onclick="toggleFunction()">EMAIL</a>
-        <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
       </div>
     </div>
 
-    <div class="filler" id="home">
-      <div class="first"></div>
-      <div class="second"></div>
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="container">
+        <h1>Teaching</h1>
+        <p>Courses taught at ANU, VUW, and as visiting faculty</p>
+      </div>
     </div>
-    
-    <ol>
-      <li><a href="https://programsandcourses.anu.edu.au/course/comp3500">COMP3500
-          Software Engineering Project (aka TechLauncher) in 2025</a></li>
-      <li><a href="https://comp.anu.edu.au/courses/comp2120/lectures/">COMP2120
-          Semester 2 2024 (Software Engineering)</a></li>
-      <li><a href="https://programsandcourses.anu.edu.au/2023/course/comp2120">COMP2120
-          Semester 2 2023 (Software Engineering)</a></li>
-      <li><a href="https://programsandcourses.anu.edu.au/2022/course/comp2120">COMP2120
-          Semester 2 2022 (Software Engineering)</a></li>
-      <li><a href="https://ecs.wgtn.ac.nz/Courses/COMP261_2022T1/">COMP
-          261 T1 (Course Coordinator Only) 2022 (Algorithms and Data
-          Structures)</a></li>
-      <li><a href="https://ecs.wgtn.ac.nz/Courses/COMP103_2021T3/">COMP
-          103 T3 2021 (Introduction to Data Structures and
-          Algorithms)</a></li>
-      <li><a href="https://ecs.wgtn.ac.nz/Courses/COMP261_2021T1/">COMP
-          261 T1 (Second Half) 2021 (Algorithms and Data
-          Structures)</a></li>
-      <li><a href="https://ecs.wgtn.ac.nz/Courses/COMP361_2021T1/">COMP
-          361 T1 (First Half) 2021 (Design and Analysis of
-          Algorithms)</a></li>
-      <li><a href="https://ecs.wgtn.ac.nz/Courses/COMP103_2020T3/">COMP
-          103 T3 (All, Shared with Morgan) 2020 (Introduction to Data
-          Structures and Algorithms)</a></li>
-      <li><a href="https://www.wgtn.ac.nz/courses/swen/430/2020/offering?crn=18668">SWEN
-          430 T2 (Second Half) 2020 (Compiler Engineering)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN325_2020T2/">SWEN
-          325 T2 (Weeks 2, 3, 4) 2020 (Software Development for Mobile
-          Platforms)</a></li>
-      <li><a href="./kyoto2020/">Kyoto University Graduate Seminars in
-          Winter 2019/2020</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN325_2019T2/">SWEN
-          325 T2 2019 (Software Development for Mobile Platforms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN325_2018T2/">SWEN
-          325 T2 2018 (Software Development for Mobile Platforms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP361_2017T2/">COMP
-          361 T2 2017 (Design and Analysis of Algorithms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP261_2017T1/">COMP
-          261 T1 (Course Coordinator Only) 2017 (Algorithms and Data
-          Structures)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN221_2017T1/">SWEN
-          221 T1 (Course Coordinator Only) 2017 (Software
-          Development)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP103_2016T2/">COMP
-          103 T2 (Course Coordinator Only) 2016 (Introduction to Data Structures and
-          Algorithms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP361_2016T2/">COMP
-          361 T2 2016 (Design and Analysis of Algorithms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP261_2016T1/">COMP
-          261 T1 (9 of 12 weeks) 2016 (Algorithms and Data
-          Structures)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP361_2015T2/">COMP
-          361 T2 2015 (Design and Analysis of Algorithms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN302_2015T2/">SWEN
-          302 T2 (Essays and Course Coordinator Only) 2015 (Agile
-          Methods)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/ENGR123_2015T2/">ENGR
-          123 T2 (Labs Coordinator Only) 2015 (Engineering Mathematics with
-          Logic and Statistics)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP261_2015T1/">COMP
-          261 T1 (First Eight Weeks) 2015 (Algorithms and Data
-          Structures)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP361_2014T2/">COMP
-          361 T2 2014 (Design and Analysis of Algorithms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN302_2014T2/">SWEN
-          302 T2 (Coordinator Only) 2014 (Agile Methods)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP261_2014T1/">COMP
-          261 T1 (Second Half) 2014 (Algorithms and Data Structures)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN223_2014T1/">SWEN
-          223 T1 (First Half) 2014 (Software Engineering Analysis)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN430_2014T1/">SWEN
-          430 T1 (First Half) 2014 (Compiler Engineering)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP303_2012T2/">COMP303
-          T2 2012 (Design and Analysis of Algorithms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN430_2012T2/">SWEN430
-          T2 2012 (Compiler Engineering)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP103_2012T1/">COMP103
-          T1 2012 (Introduction to Data Structures and
-          Algorithms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP303_2011T2/">COMP303
-          T2 2011 (Design and Analysis of Algorithms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP261_2011T2/">COMP261
-          T2 (Last 8 weeks) 2011 (Algorithms and Data Structures)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN430_2011T2/">SWEN430
-          T2 (First 4 weeks) 2011 (Compiler Engineering)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN423_2011T1/">SWEN423
-          T1 (First 2 weeks and last 4 weeks) 2011 (OO Paradigms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP303_2010T2/">COMP303
-          T2 2010 (Design and Analysis of Algorithms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP261_2010T2/">COMP261
-          T2 (2nd half) 2010 (Algorithms and Data Structures)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN430_2010T2/">SWEN430
-          T2 (1st half) 2010 (Compiler Engineering)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP303_2009T2/">COMP303
-          T2 (2nd half) 2009 (Design and Analysis of Algorithms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP431_2009T2/">COMP431
-          T2 (2nd half) 2009 (Compilers)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP304_2009T1/">COMP304
-          T1 (1st half) 2009 (Programming Languages)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/Courses/COMP462_2009T1/">COMP462
-          T1 (1st half) 2009 (Object-Oriented Paradigms)</a></li>
-      <li><a href="http://www.mcs.vuw.ac.nz/private/courses/COMP303/2008T2/">COMP303
-          T2 2008 (Design and Analysis of Algorithms)</a></li>
-      <li><a href="http://www.mcs.vuw.ac.nz/private/courses/COMP431/2008T1/">COMP431
-          T1 2008 (Compilers)</a></li>
-      <li><a href="http://www.mcs.vuw.ac.nz/private/courses/COMP103/2007T2/">COMP103
-          T2 (2nd half) 2007 (Introduction to Data Structures and
-          Algorithms)</a></li>
-      <li><a href="http://www.mcs.vuw.ac.nz/private/courses/COMP471/2007T2/">COMP471
-          T2 (1st half) 2007 (Special Topic: Compiler
-          Technologies)</a></li>
-      <li><a href="http://www.mcs.vuw.ac.nz/private/courses/COMP462/2007T1/">COMP462
-          T1 (1st half) 2007 (Object-Oriented Paradigms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/private/courses/COMP103/2006T3/">COMP103
-          T3 (2nd half) 2006 (Introduction to Data Structures and
-          Algorithms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/private/courses/COMP103/2006T2/">COMP103
-          T2 (2nd half) 2006 (Introduction to Data Structures and
-          Algorithms)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/private/courses/COMP101/2005T3/">COMP101
-          T3 2005 (Introduction to Dynamic Web Development)</a></li>
-      <li><a href="http://ecs.victoria.ac.nz/private/courses/INET101/2004T3/">INET101
-          T3 2004 (Introduction to Internet Technology)</a></li>
-    </ol>
-    
+
+    <!-- Teaching Content -->
+    <div class="section">
+      <div class="container">
+
+        <div class="list-group-title">Australian National University (2022 - present)</div>
+        <ol class="styled-list">
+          <li><a href="https://programsandcourses.anu.edu.au/course/comp3500">COMP3500 Software Engineering Project (aka TechLauncher) in 2025</a></li>
+          <li><a href="https://comp.anu.edu.au/courses/comp2120/lectures/">COMP2120 Semester 2 2024 (Software Engineering)</a></li>
+          <li><a href="https://programsandcourses.anu.edu.au/2023/course/comp2120">COMP2120 Semester 2 2023 (Software Engineering)</a></li>
+          <li><a href="https://programsandcourses.anu.edu.au/2022/course/comp2120">COMP2120 Semester 2 2022 (Software Engineering)</a></li>
+        </ol>
+
+        <div class="list-group-title">Victoria University of Wellington (2006 - 2022)</div>
+        <ol class="styled-list" start="5">
+          <li><a href="https://ecs.wgtn.ac.nz/Courses/COMP261_2022T1/">COMP 261 T1 (Course Coordinator Only) 2022 (Algorithms and Data Structures)</a></li>
+          <li><a href="https://ecs.wgtn.ac.nz/Courses/COMP103_2021T3/">COMP 103 T3 2021 (Introduction to Data Structures and Algorithms)</a></li>
+          <li><a href="https://ecs.wgtn.ac.nz/Courses/COMP261_2021T1/">COMP 261 T1 (Second Half) 2021 (Algorithms and Data Structures)</a></li>
+          <li><a href="https://ecs.wgtn.ac.nz/Courses/COMP361_2021T1/">COMP 361 T1 (First Half) 2021 (Design and Analysis of Algorithms)</a></li>
+          <li><a href="https://ecs.wgtn.ac.nz/Courses/COMP103_2020T3/">COMP 103 T3 (All, Shared with Morgan) 2020 (Introduction to Data Structures and Algorithms)</a></li>
+          <li><a href="https://www.wgtn.ac.nz/courses/swen/430/2020/offering?crn=18668">SWEN 430 T2 (Second Half) 2020 (Compiler Engineering)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN325_2020T2/">SWEN 325 T2 (Weeks 2, 3, 4) 2020 (Software Development for Mobile Platforms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN325_2019T2/">SWEN 325 T2 2019 (Software Development for Mobile Platforms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN325_2018T2/">SWEN 325 T2 2018 (Software Development for Mobile Platforms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP361_2017T2/">COMP 361 T2 2017 (Design and Analysis of Algorithms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP261_2017T1/">COMP 261 T1 (Course Coordinator Only) 2017 (Algorithms and Data Structures)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN221_2017T1/">SWEN 221 T1 (Course Coordinator Only) 2017 (Software Development)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP103_2016T2/">COMP 103 T2 (Course Coordinator Only) 2016 (Introduction to Data Structures and Algorithms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP361_2016T2/">COMP 361 T2 2016 (Design and Analysis of Algorithms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP261_2016T1/">COMP 261 T1 (9 of 12 weeks) 2016 (Algorithms and Data Structures)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP361_2015T2/">COMP 361 T2 2015 (Design and Analysis of Algorithms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN302_2015T2/">SWEN 302 T2 (Essays and Course Coordinator Only) 2015 (Agile Methods)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/ENGR123_2015T2/">ENGR 123 T2 (Labs Coordinator Only) 2015 (Engineering Mathematics with Logic and Statistics)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP261_2015T1/">COMP 261 T1 (First Eight Weeks) 2015 (Algorithms and Data Structures)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP361_2014T2/">COMP 361 T2 2014 (Design and Analysis of Algorithms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN302_2014T2/">SWEN 302 T2 (Coordinator Only) 2014 (Agile Methods)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP261_2014T1/">COMP 261 T1 (Second Half) 2014 (Algorithms and Data Structures)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN223_2014T1/">SWEN 223 T1 (First Half) 2014 (Software Engineering Analysis)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN430_2014T1/">SWEN 430 T1 (First Half) 2014 (Compiler Engineering)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP303_2012T2/">COMP303 T2 2012 (Design and Analysis of Algorithms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN430_2012T2/">SWEN430 T2 2012 (Compiler Engineering)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP103_2012T1/">COMP103 T1 2012 (Introduction to Data Structures and Algorithms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP303_2011T2/">COMP303 T2 2011 (Design and Analysis of Algorithms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP261_2011T2/">COMP261 T2 (Last 8 weeks) 2011 (Algorithms and Data Structures)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN430_2011T2/">SWEN430 T2 (First 4 weeks) 2011 (Compiler Engineering)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN423_2011T1/">SWEN423 T1 (First 2 weeks and last 4 weeks) 2011 (OO Paradigms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP303_2010T2/">COMP303 T2 2010 (Design and Analysis of Algorithms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP261_2010T2/">COMP261 T2 (2nd half) 2010 (Algorithms and Data Structures)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/SWEN430_2010T2/">SWEN430 T2 (1st half) 2010 (Compiler Engineering)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP303_2009T2/">COMP303 T2 (2nd half) 2009 (Design and Analysis of Algorithms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP431_2009T2/">COMP431 T2 (2nd half) 2009 (Compilers)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP304_2009T1/">COMP304 T1 (1st half) 2009 (Programming Languages)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/Courses/COMP462_2009T1/">COMP462 T1 (1st half) 2009 (Object-Oriented Paradigms)</a></li>
+          <li><a href="http://www.mcs.vuw.ac.nz/private/courses/COMP303/2008T2/">COMP303 T2 2008 (Design and Analysis of Algorithms)</a></li>
+          <li><a href="http://www.mcs.vuw.ac.nz/private/courses/COMP431/2008T1/">COMP431 T1 2008 (Compilers)</a></li>
+          <li><a href="http://www.mcs.vuw.ac.nz/private/courses/COMP103/2007T2/">COMP103 T2 (2nd half) 2007 (Introduction to Data Structures and Algorithms)</a></li>
+          <li><a href="http://www.mcs.vuw.ac.nz/private/courses/COMP471/2007T2/">COMP471 T2 (1st half) 2007 (Special Topic: Compiler Technologies)</a></li>
+          <li><a href="http://www.mcs.vuw.ac.nz/private/courses/COMP462/2007T1/">COMP462 T1 (1st half) 2007 (Object-Oriented Paradigms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/private/courses/COMP103/2006T3/">COMP103 T3 (2nd half) 2006 (Introduction to Data Structures and Algorithms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/private/courses/COMP103/2006T2/">COMP103 T2 (2nd half) 2006 (Introduction to Data Structures and Algorithms)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/private/courses/COMP101/2005T3/">COMP101 T3 2005 (Introduction to Dynamic Web Development)</a></li>
+          <li><a href="http://ecs.victoria.ac.nz/private/courses/INET101/2004T3/">INET101 T3 2004 (Introduction to Internet Technology)</a></li>
+        </ol>
+
+        <div class="list-group-title">Visiting / Guest Lectures</div>
+        <ol class="styled-list" start="51">
+          <li><a href="./kyoto2020/">Kyoto University Graduate Seminars in Winter 2019/2020</a></li>
+        </ol>
+
+      </div>
+    </div>
+
     <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-      <!--
-          <div class="w3-xlarge w3-section">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-          </div>
-          -->
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-links">
+          <a href="./">Home</a>
+          <a href="./publications.html">Publications</a>
+          <a href="./students.html">Students</a>
+          <a href="./committees.html">Service</a>
+        </div>
+        <p>Alex Potanin &middot; School of Computing, Australian National University</p>
+      </div>
     </footer>
-    
+
     <script>
-      // Modal Image Gallery
-      function onClick(element) {
-          document.getElementById("img01").src = element.src;
-          document.getElementById("modal01").style.display = "block";
-          var captionText = document.getElementById("caption");
-          captionText.innerHTML = element.alt;
-      }
-      
-      // Change style of navbar on scroll
       window.onscroll = function() {myFunction()};
       function myFunction() {
-          var navbar = document.getElementById("myNavbar");
-          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-              navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-          } else {
-              navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-          }
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
       }
-      
-      // Used to toggle the menu on small screens when clicking on the menu button
+
       function toggleFunction() {
-          var x = document.getElementById("navDemo");
-          if (x.className.indexOf("w3-show") == -1) {
-              x.className += " w3-show";
-          } else {
-              x.className = x.className.replace(" w3-show", "");
-          }
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
       }
     </script>
-    
+
   </body>
 </html>
