@@ -7,9 +7,9 @@
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect x="0" y="580" width="1200" height="50" fill="#BE830E"/>
-  <text x="100" y="200" font-family="sans-serif" font-size="64" font-weight="700" fill="#ffffff">Alex Potanin</text>
+  <text x="100" y="200" font-family="sans-serif" font-size="64" font-weight="700" fill="#ffffff">Dr Alex Potanin</text>
   <text x="100" y="270" font-family="sans-serif" font-size="30" font-weight="600" fill="#d4a43a">Associate Professor</text>
   <text x="100" y="320" font-family="sans-serif" font-size="26" fill="rgba(255,255,255,0.8)">School of Computing, Australian National University</text>
   <text x="100" y="400" font-family="sans-serif" font-size="22" fill="rgba(255,255,255,0.6)" font-style="italic">Programming Language Design &amp; Implementation</text>
-  <text x="100" y="460" font-family="sans-serif" font-size="18" fill="rgba(255,255,255,0.5)">Ownership Types · Wyvern Language · Software Verification · Capabilities</text>
+  <text x="100" y="460" font-family="sans-serif" font-size="18" fill="rgba(255,255,255,0.5)">Ownership Types · Wyvern Language · Software Verification · Capabilities · Edge AI</text>
 </svg>
