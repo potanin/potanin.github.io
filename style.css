@@ -256,6 +256,33 @@ a:hover {
   font-size: 1rem;
 }
 
+.theme-card h3 a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.theme-card h3 a:hover {
+  color: var(--accent);
+}
+
+.theme-card.lang-card {
+  border-top: 3px solid var(--primary);
+  background: linear-gradient(180deg, #eef3fa 0%, #fff 40%);
+}
+
+.lang-badge {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.68rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
 /* ===== Student Cards ===== */
 .student-card {
   padding: 20px;
