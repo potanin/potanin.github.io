@@ -166,6 +166,15 @@ a:hover {
   margin: 0 0 16px;
 }
 
+.hero .hero-institution a {
+  color: #ffd966;
+  text-decoration: underline;
+}
+
+.hero .hero-institution a:hover {
+  color: #fff;
+}
+
 .hero .hero-tagline {
   font-size: 1.05rem;
   color: rgba(255,255,255,0.65);
