@@ -424,12 +424,12 @@ a.stat-item:hover {
   font-size: 0.95rem;
 }
 
-.cta-box p a:not(.cta-btn) {
+.cta-box a:not(.cta-btn) {
   color: #fff;
   text-decoration: underline;
 }
 
-.cta-box p a:not(.cta-btn):hover {
+.cta-box a:not(.cta-btn):hover {
   color: var(--accent-light);
 }
 
