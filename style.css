@@ -531,6 +531,11 @@ a.stat-item:hover {
   border-bottom: none;
 }
 
+ol.styled-list.numbered {
+  list-style: decimal;
+  padding-left: 32px;
+}
+
 .list-group-title {
   font-size: 1.1rem;
   font-weight: 700;
